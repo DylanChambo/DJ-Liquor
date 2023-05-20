@@ -4,8 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,24 +17,26 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ImageView backIcon = findViewById(R.id.back_icon);
-        ImageView searchIcon = findViewById(R.id.search_icon);
-        TextView toolbarTitle = findViewById(R.id.toolbar_title);
-        backIcon.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Clicked Back!", Toast.LENGTH_SHORT).show();
-            }
-        });
 
-        searchIcon.setOnClickListener(new View.OnClickListener() {
+        SearchView searchView = findViewById(R.id.search_view);
+        LinearLayout logo = findViewById(R.id.logo_linear_layout);
+
+        searchView.setOnSearchClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, "Clicked Search!", Toast.LENGTH_SHORT).show();
+                logo.setVisibility(searchView.INVISIBLE);
+                searchView.setMaxWidth(9999999);
             }
         });
-
-        toolbarTitle.setText("DJ Liquor");
+        searchView.setOnCloseListener(new SearchView.OnCloseListener() {
+            @Override
+            public boolean onClose() {
+                Toast.makeText(MainActivity.this, "Closed Search!", Toast.LENGTH_SHORT).show();
+                logo.setVisibility(searchView.VISIBLE);
+                return false;
+            }
+        });
 
     }
 }

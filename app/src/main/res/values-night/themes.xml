@@ -5,12 +5,9 @@
         <item name="colorPrimary">@color/grey_900</item>
         <item name="colorOnPrimary">@color/blue_500</item>
         <item name="backgroundColor">@color/grey_900</item>
-        <item name="textColorSearchUrl">@color/grey_800</item>
+        <item name="queryBackground">@color/grey_800</item>
+        <item name="textColorSearchUrl">@color/white</item>
         <item name="colorContainer">@color/grey_300</item>
         <item name="colorOnBackground">@color/black</item>
-
-        <item name="android:textColor">?attr/colorOnBackground</item>
-        <item name="android:background">?attr/backgroundColor</item>
-        <item name="android:statusBarColor">?attr/colorPrimary</item>
     </style>
 </resources>

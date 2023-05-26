@@ -1,8 +1,9 @@
-public class Beer extends Product {
+public class Liqueur extends Product {
 
     private String type;
+    private String country;
 
-    public Beer(int idNumber, float abv, float cost, String description, int volume, String producer, String type) {
+    public Liqueur(int idNumber, float abv, float cost, String description, int volume, String producer, String type, String country) {
         super.idNumber = idNumber;
         super.abv = abv;
         super.cost = cost;
@@ -14,6 +15,10 @@ public class Beer extends Product {
 
     public String getType() {
         return this.type;
+    }
+
+    public String getCountry() {
+        return this.country;
     }
 
 }

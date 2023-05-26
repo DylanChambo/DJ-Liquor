@@ -2,7 +2,12 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.DJLiquor" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
-        <item name="colorPrimary">@color/blue_500</item> -->
-        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <item name="colorPrimary">@color/grey_900</item>
+        <item name="colorOnPrimary">@color/blue_500</item>
+        <item name="backgroundColor">@color/grey_900</item>
+        <item name="queryBackground">@color/grey_800</item>
+        <item name="textColorSearchUrl">@color/white</item>
+        <item name="colorContainer">@color/grey_300</item>
+        <item name="colorOnBackground">@color/black</item>
     </style>
 </resources>

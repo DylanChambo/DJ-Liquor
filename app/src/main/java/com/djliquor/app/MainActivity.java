@@ -3,12 +3,9 @@ package com.djliquor.app;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.SearchView;
-import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
 

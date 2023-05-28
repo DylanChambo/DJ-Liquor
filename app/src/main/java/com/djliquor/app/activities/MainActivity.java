@@ -17,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        SearchView searchView = findViewById(R.id.search_view);
-        LinearLayout logo = findViewById(R.id.logo_linear_layout);
+        SearchView searchView = (SearchView) findViewById(R.id.search_view);
+        LinearLayout logo = (LinearLayout) findViewById(R.id.logo_linear_layout);
 
         searchView.setOnSearchClickListener(new View.OnClickListener() {
             @Override

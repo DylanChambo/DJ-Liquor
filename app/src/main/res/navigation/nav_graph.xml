@@ -10,4 +10,16 @@
         android:name="com.djliquor.app.HomeFragment"
         android:label="@string/home_fragment_label"
         tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/SearchFragment"
+        android:name="com.djliquor.app.SearchFragment"
+        android:label="@string/home_fragment_label"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/DetailFragment"
+        android:name="com.djliquor.app.DetailFragment"
+        android:label="@string/home_fragment_label"
+        tools:layout="@layout/fragment_detail" />
 </navigation>

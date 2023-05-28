@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/categoryView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:divider="@android:color/transparent"
-    android:dividerHeight="10sp"
     tools:context=".fragments.HomeFragment">
 
+    <GridView
+        android:id="@+id/categoryView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:horizontalSpacing="12dp"
+        android:numColumns="2"
+        android:verticalSpacing="12dp"
+        android:layout_gravity="bottom">
 
-
-
-</ListView>
+    </GridView>
+</LinearLayout>

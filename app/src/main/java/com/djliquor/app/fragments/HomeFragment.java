@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.GridView;
 import android.widget.ListView;
 
 import androidx.annotation.NonNull;
@@ -32,7 +33,7 @@ public class HomeFragment extends Fragment {
         List<Category> categories = CategoryProvider.getCategories();
         CategoryAdaptor categoryAdapter = new CategoryAdaptor(getContext(), R.layout.category_list_view_item, categories);
 
-        ListView categoryView = (ListView) view.findViewById(R.id.categoryView);
+        GridView categoryView = (GridView) view.findViewById(R.id.categoryView);
         categoryView.setAdapter(categoryAdapter);
 
         return view;

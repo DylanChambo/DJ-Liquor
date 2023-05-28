@@ -1,4 +1,4 @@
-package com.djliquor.app;
+package com.djliquor.app.fragments;
 
 
 import androidx.fragment.app.Fragment;

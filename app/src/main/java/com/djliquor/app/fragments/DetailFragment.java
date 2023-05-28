@@ -1,4 +1,4 @@
-package com.djliquor.app;
+package com.djliquor.app.fragments;
 
 
 import android.os.Bundle;
@@ -9,18 +9,18 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.djliquor.app.databinding.FragmentSearchBinding;
+import com.djliquor.app.databinding.FragmentDetailBinding;
 
-public class SearchFragment extends Fragment {
+public class DetailFragment extends Fragment {
 
-    private FragmentSearchBinding binding;
+    private FragmentDetailBinding binding;
 
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
 
-        binding = FragmentSearchBinding.inflate(inflater, container, false);
+        binding = FragmentDetailBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
     }

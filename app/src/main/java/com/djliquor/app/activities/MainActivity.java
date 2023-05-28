@@ -1,4 +1,4 @@
-package com.djliquor.app;
+package com.djliquor.app.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.SearchView;
 import android.widget.Toast;
+
+import com.djliquor.app.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, "Clicked Search!", Toast.LENGTH_SHORT).show();
                 logo.setVisibility(searchView.INVISIBLE);
-                searchView.setMaxWidth(9999999);
+                searchView.setMaxWidth(Integer.MAX_VALUE);
             }
         });
         searchView.setOnCloseListener(new SearchView.OnCloseListener() {

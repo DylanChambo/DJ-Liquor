@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/HomeFragment"
-        android:name="com.djliquor.app.HomeFragment"
+        android:name="com.djliquor.app.fragments.HomeFragment"
         android:label="@string/home_fragment_label"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/SearchFragment"
-        android:name="com.djliquor.app.SearchFragment"
+        android:name="com.djliquor.app.fragments.SearchFragment"
         android:label="@string/home_fragment_label"
         tools:layout="@layout/fragment_search" />
 
     <fragment
         android:id="@+id/DetailFragment"
-        android:name="com.djliquor.app.DetailFragment"
+        android:name="com.djliquor.app.fragments.DetailFragment"
         android:label="@string/home_fragment_label"
         tools:layout="@layout/fragment_detail" />
 </navigation>

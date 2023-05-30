@@ -1,47 +1,46 @@
-public abstract class Product {
+enum Category {
+    BEER,
+    WINE,
+    CIDER,
+    SPIRIT,
+    LIQUEUR,
+    RTD
+}
 
-    protected int idNumber;
-    protected float abv;
-    protected float cost;
-    protected String description;
-    protected int volume;
-    protected String producer;
+public class Product {
 
-    protected Product() {
+    private int idNumber;
+    private float abv;
+    private float cost;
+    private String description;
+    private Category category;
 
-    }
-
-    protected Product(int idNumber, float abv, float cost, String description, int volume, String producer) {
+    public Product(int idNumber, float abv, float cost, String description, Category category) {
         this.idNumber = idNumber;
         this.abv = abv;
         this.cost = cost;
         this.description = description;
-        this.volume = volume;
-        this.producer = producer;
+        this.category = category;
     }
 
-    protected int getIdNumber() {
+    public int getIdNumber() {
         return this.idNumber;
     }
 
-    protected float getAbv() {
+    public float getAbv() {
         return this.abv;
     }
 
-    protected float getCost() {
+    public float getCost() {
         return this.cost;
     }
 
-    protected String getDescription() {
+    public String getDescription() {
         return this.description;
     }
 
-    protected int getVolume() {
-        return this.volume;
-    }
-
-    protected String getProducer() {
-        return this.producer;
+    public Category getCategory() {
+        return this.category;
     }
 
 }

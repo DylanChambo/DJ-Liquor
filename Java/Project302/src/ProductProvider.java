@@ -4,7 +4,7 @@ public class ProductProvider {
     "Speights", "Speights Summit Ultra Low Carb", "Export 33", "Peroni Nastro Azzurro", "Export Gold",
             "Somersby Apple Cider", "Old Mout Feijoa & Cider", "Old Mout Cider Boysencider", "Zeffer Apple Crumble Cider", "Somersby Passionfruit & Orange Cider",
             "Old Mout Cider Pear Scrumpy", "Old Mout Scrumpy Berry Cider", "Zeffer Rose with Berry Infusion Cider", "Somersby Pear Cider", "Old Mount Scrumpy Tropical Cider",
-            "Clean Collective Wild Berry & Lime Vodka", "Cruiser Cool Lime", "Long White Vodka Apple Pear", "Gordon's Gin & Tonic Slimline"
+            "Clean Collective Wild Berry & Lime Vodka", "Cruiser Cool Lime", "Long White Vodka Apple Pear", "Gordon's Gin & Tonic Slimline",
             "Clean Collective Pink Gin", "Long White Vodka Passionfruit", "Rinse Lemon Vodka", "Cruiser Blueberry",
             "Pals Vodka Peach Passionfruit & Soda", "Odd Company Vodka Raspberry & Pomegranate"};
 

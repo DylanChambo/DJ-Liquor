@@ -14,13 +14,17 @@ public class Product {
     private float cost;
     private String description;
     private Category category;
+    private int imageAddress;
+    private String name;
 
-    public Product(int idNumber, float abv, float cost, String description, Category category) {
+    public Product(int idNumber, float abv, float cost, String description, Category category, int imageAddress, String name) {
         this.idNumber = idNumber;
         this.abv = abv;
         this.cost = cost;
         this.description = description;
         this.category = category;
+        this.imageAddress = imageAddress;
+        this.name = name;
     }
 
     public int getIdNumber() {
@@ -42,5 +46,10 @@ public class Product {
     public Category getCategory() {
         return this.category;
     }
+
+    public int getImageAddress() {
+        return this.imageAddress;
+    }
+    public String getName() { return this.name; }
 
 }

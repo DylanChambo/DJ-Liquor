@@ -1,22 +1,26 @@
+import java.util.ArrayList;
+
 public class ProductProvider {
 
-    static String[] names = {"Haagen Lager", "Lion Red", "Heineken", "Heineken 0.0%", "Corona Extra",
-    "Speights", "Speights Summit Ultra Low Carb", "Export 33", "Peroni Nastro Azzurro", "Export Gold",
-            "Somersby Apple Cider", "Old Mout Feijoa & Cider", "Old Mout Cider Boysencider", "Zeffer Apple Crumble Cider", "Somersby Passionfruit & Orange Cider",
-            "Old Mout Cider Pear Scrumpy", "Old Mout Scrumpy Berry Cider", "Zeffer Rose with Berry Infusion Cider", "Somersby Pear Cider", "Old Mount Scrumpy Tropical Cider",
-            "Clean Collective Wild Berry & Lime Vodka", "Cruiser Cool Lime", "Long White Vodka Apple Pear", "Gordon's Gin & Tonic Slimline",
-            "Clean Collective Pink Gin", "Long White Vodka Passionfruit", "Rinse Lemon Vodka", "Cruiser Blueberry",
-            "Pals Vodka Peach Passionfruit & Soda", "Odd Company Vodka Raspberry & Pomegranate"};
+    static String[] names = {"Tiger", "Corona Extra", "Asahi", "Lion Red", "Heineken"};
+    static int[] ids = {001, 002, 003, 004, 005};
+    static float[] abv = {5.00F, 4.50F, 5.00F, 4.00F, 5.00F};
+    static float[] cost = {1.49F, 2.49F, 3.49F, 1.49F, 2.99F};
+    static Category[] category = {Category.BEER, Category.BEER, Category.BEER, Category.BEER, Category.BEER};
+    static int[] imageAdd = {001, 002, 003, 004, 005};
+    static String[] description = {"This is a Tiger beer", "This is a corona", "This is a bottle of Asahi", "This is a bottle of Lion Red", "This is a Heineken"};
 
-    static String[] wines = {"Stone Paddock Hawke's Bay Syrah 2021", "Little Giant Barossa Shiraz 2021", "Domaine de la Vinconniere, Muscadet Sur Lie 2021",
-            "Nero Oro Nero D'Avola Appassimento Sicilia DOC 2021", "Milenrama Rioja Reserva 2016", "Three Finger Jack Old Vine Zinfandel 2019",
-            "Momo Organic Marlborough Sauvignon Blanc 2022", "Te Awanga Estate Hawke's Bay Chardonnay 2022", "Momo Marlborough Pinot Noir 2022",
-            "Vavasour Awatere Valley Pinot Gris 2022"};
+    public static ArrayList<Product> generateData(){
+        ArrayList<Product> drinks = new ArrayList<Product>();
 
-    static String[] spirits = {"Altos Reposado Tequila", "Bumbu XO Rum", "Proper Twelve Irish Whiskey",
-            "Chivas Regal Extra 13YO Tequila Cask Blended Scotch Whisky", "Absolut Vodka Watermelon", "Langs Banana Rum",
-            "Bacardi Carta Blanca Superior White Rum", "Bacardi Spiced Rum", "Coruba Gold Rum", "Canadian Club Spiced Whisky",
-            "Jumping Goat Cold Brewed Coffee Whisky Liqueur", "Jumping Goat Cold Brewed Coffee Vodka Liqueur", "Aperol Aperitivo",
-            "Pimms No 1 Cup", "Bailey's Irish Cream", "Jagermeister Cold Brew Coffee", "Jagermeister", "Kahlua", "Malibu", "Kahlua Salted Caramel"};
+        for (int i = 0; i<5; i++) {
+            Product newDrink = new Product(ids[i], abv[i], cost[i], description[i], category[i], imageAdd[i], names[i]);
+            drinks.add(newDrink);
+        }
+
+        return drinks;
+
+    }
+
 
 }

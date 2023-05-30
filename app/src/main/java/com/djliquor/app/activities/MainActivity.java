@@ -1,5 +1,6 @@
 package com.djliquor.app.activities;
 
+import androidx.activity.OnBackPressedDispatcher;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.navigation.NavController;
@@ -9,42 +10,51 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import androidx.appcompat.widget.SearchView;
+
 import android.view.View;
-import android.widget.LinearLayout;
-import android.widget.SearchView;
 import android.widget.Toast;
 
 import com.djliquor.app.R;
-import com.djliquor.app.fragments.HomeFragment;
-import com.djliquor.app.fragments.SearchFragment;
+import com.djliquor.app.databinding.ActivityMainBinding;
+
+
+
 
 public class MainActivity extends AppCompatActivity {
-
+    private AppBarConfiguration appBarConfiguration;
+    private ActivityMainBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
+        setSupportActionBar(binding.toolbar);
+
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
+        appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
+        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
 
-        SearchView searchView = (SearchView) findViewById(R.id.search_view);
-        LinearLayout logo = (LinearLayout) findViewById(R.id.logo_linear_layout);
-        searchView.setMaxWidth(Integer.MAX_VALUE);
-        searchView.setOnSearchClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                logo.setVisibility(searchView.INVISIBLE);
-
-            }
-        });
+        MenuItem searchItem = menu.findItem(R.id.action_search);
+        SearchView searchView = (SearchView) searchItem.getActionView();
         searchView.setOnCloseListener(new SearchView.OnCloseListener() {
             @Override
             public boolean onClose() {
-                logo.setVisibility(searchView.VISIBLE);
+                Toast.makeText(MainActivity.this, "test", Toast.LENGTH_SHORT).show();
                 return false;
             }
         });
-
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
@@ -61,5 +71,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
+        return NavigationUI.navigateUp(navController, appBarConfiguration)
+                || super.onSupportNavigateUp();
     }
 }

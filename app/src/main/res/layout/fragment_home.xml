@@ -4,7 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".fragments.HomeFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="POPULAR"
+        android:gravity="center"
+        android:textSize="24dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CATEGORIES"
+        android:gravity="center"
+        android:textSize="24dp"/>
+
 
     <GridView
         android:id="@+id/categoryView"
@@ -14,7 +35,8 @@
         android:horizontalSpacing="12dp"
         android:numColumns="2"
         android:verticalSpacing="12dp"
-        android:layout_gravity="bottom">
+        android:layout_gravity="bottom"
+        tools:listitem="@layout/category_list_view_item">
 
     </GridView>
 </LinearLayout>

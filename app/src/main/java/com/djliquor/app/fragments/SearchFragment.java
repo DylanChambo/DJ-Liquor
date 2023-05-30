@@ -5,10 +5,12 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import com.djliquor.app.R;
 import com.djliquor.app.databinding.FragmentSearchBinding;
 
 public class SearchFragment extends Fragment {
@@ -17,11 +19,15 @@ public class SearchFragment extends Fragment {
 
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,
-            Bundle savedInstanceState
-    ) {
-
+            Bundle savedInstanceState)
+    {
         binding = FragmentSearchBinding.inflate(inflater, container, false);
-        return binding.getRoot();
+        View view = binding.getRoot();
+
+        TextView tv = view.findViewById(R.id.search_text);
+        tv.setText("RESULTS FOR `" + getArguments().getString("search") + "`");
+
+        return view;
 
     }
 

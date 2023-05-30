@@ -1,4 +1,10 @@
+package com.djliquor.app.providers;
+
 import java.util.ArrayList;
+
+import com.djliquor.app.models.Product;
+import com.djliquor.app.models.Type;
+
 
 public class ProductProvider {
 
@@ -6,8 +12,8 @@ public class ProductProvider {
     static int[] ids = {001, 002, 003, 004, 005};
     static float[] abv = {5.00F, 4.50F, 5.00F, 4.00F, 5.00F};
     static float[] cost = {1.49F, 2.49F, 3.49F, 1.49F, 2.99F};
-    static Category[] category = {Category.BEER, Category.BEER, Category.BEER, Category.BEER, Category.BEER};
-    static int[] imageAdd = {001, 002, 003, 004, 005};
+    static Type[] category = {Type.BEER, Type.BEER, Type.BEER, Type.BEER, Type.BEER};
+    static String[] imageAdd = {"tiger", "corona", "asahi", "lionred","heineken"};
     static String[] description = {"This is a Tiger beer", "This is a corona", "This is a bottle of Asahi", "This is a bottle of Lion Red", "This is a Heineken"};
 
     public static ArrayList<Product> generateData(){

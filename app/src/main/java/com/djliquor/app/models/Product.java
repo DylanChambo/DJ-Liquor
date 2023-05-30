@@ -1,11 +1,7 @@
-enum Category {
-    BEER,
-    WINE,
-    CIDER,
-    SPIRIT,
-    LIQUEUR,
-    RTD
-}
+package com.djliquor.app.models;
+import com.djliquor.app.models.Type;
+
+import java.io.Serializable;
 
 public class Product {
 
@@ -13,11 +9,11 @@ public class Product {
     private float abv;
     private float cost;
     private String description;
-    private Category category;
-    private int imageAddress;
+    private Type category;
+    private String imageAddress;
     private String name;
 
-    public Product(int idNumber, float abv, float cost, String description, Category category, int imageAddress, String name) {
+    public Product(int idNumber, float abv, float cost, String description, Type category, String imageAddress, String name) {
         this.idNumber = idNumber;
         this.abv = abv;
         this.cost = cost;
@@ -43,11 +39,11 @@ public class Product {
         return this.description;
     }
 
-    public Category getCategory() {
+    public Type getCategory() {
         return this.category;
     }
 
-    public int getImageAddress() {
+    public String getImageAddress() {
         return this.imageAddress;
     }
     public String getName() { return this.name; }

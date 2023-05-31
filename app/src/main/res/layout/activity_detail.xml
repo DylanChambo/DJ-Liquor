@@ -6,44 +6,53 @@
     android:orientation="vertical"
     tools:context=".activities.DetailActivity">
     <include layout="@layout/toolbar"/>
-
-    <ImageView
-        android:id="@+id/image_view"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:src="@drawable/corona"
-        android:background="?attr/colorContainer"/>
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:src="@drawable/corona"
+                android:background="?attr/colorContainer"/>
 
-    <TextView
-        android:id="@+id/name_text_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="CORONA 6 PACK BOTTLES 335ML"
-        android:textSize="24dp"
-        android:paddingHorizontal="12dp"
-        android:paddingBottom="24dp"/>
+            <TextView
+                android:id="@+id/name_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CORONA 6 PACK BOTTLES 335ML"
+                android:textSize="24dp"
+                android:paddingHorizontal="12dp"
+                android:paddingBottom="24dp"/>
 
-    <TextView
-        android:id="@+id/price_text_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="$18.99"
-        android:textSize="20dp"
-        android:paddingHorizontal="12dp"/>
+            <TextView
+                android:id="@+id/price_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$18.99"
+                android:textSize="20dp"
+                android:paddingHorizontal="12dp"/>
 
-    <TextView
-        android:id="@+id/abv_text_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="4.6% ABV"
-        android:textSize="20dp"
-        android:paddingHorizontal="12dp"/>
+            <TextView
+                android:id="@+id/abv_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4.6% ABV"
+                android:textSize="20dp"
+                android:paddingHorizontal="12dp"/>
 
-    <TextView
-        android:id="@+id/desc_text_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Brewed and bottled in Mexico by Grupo Modelo, Corona is the world’s number 1 Mexican beer."
-        android:textSize="20dp"
-        android:paddingHorizontal="12dp"/>
+            <TextView
+                android:id="@+id/desc_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Brewed and bottled in Mexico by Grupo Modelo, Corona is the world’s number 1 Mexican beer."
+                android:textSize="20dp"
+                android:paddingHorizontal="12dp"/>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

@@ -15,6 +15,7 @@ public class Product implements Serializable {
     private String imageAddress;
     private String name;
 
+    private int numImages;
     public Product(int idNumber, float abv, float cost, String description, Type category, String imageAddress, String name) {
         this.idNumber = idNumber;
         this.abv = abv;
@@ -23,6 +24,7 @@ public class Product implements Serializable {
         this.category = category;
         this.imageAddress = imageAddress;
         this.name = name;
+        this.numImages = 3;
     }
 
     public int getIdNumber() {
@@ -49,5 +51,7 @@ public class Product implements Serializable {
         return this.imageAddress;
     }
     public String getName() { return this.name; }
+
+    public int getNumImages() {return this.numImages; }
 
 }

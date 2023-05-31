@@ -6,8 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.AnimationUtils;
-import android.widget.AdapterView;
-import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.SearchView;
 import android.widget.TextView;
@@ -20,7 +18,6 @@ import com.djliquor.app.intefaces.IProductView;
 import com.djliquor.app.R;
 import com.djliquor.app.adaptors.ProductAdaptor;
 import com.djliquor.app.databinding.ActivityListBinding;
-import com.djliquor.app.databinding.ActivityMainBinding;
 import com.djliquor.app.models.Product;
 import com.djliquor.app.models.Type;
 

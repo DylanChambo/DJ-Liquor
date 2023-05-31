@@ -4,20 +4,16 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.djliquor.app.intefaces.IProductView;
 import com.djliquor.app.R;
-import com.djliquor.app.models.Category;
 import com.djliquor.app.models.Product;
 import java.util.ArrayList;
-import java.util.List;
 
 public class ProductAdaptor extends RecyclerView.Adapter<ProductAdaptor.ProductViewHolder> {
     private final IProductView iProductView;
@@ -46,7 +42,7 @@ public class ProductAdaptor extends RecyclerView.Adapter<ProductAdaptor.ProductV
     @Override
     public void onBindViewHolder(@NonNull ProductAdaptor.ProductViewHolder holder, int position) {
         holder.textView.setText(mProducts.get(position).getName());
-        int i = mContext.getResources().getIdentifier(mProducts.get(position).getImageAddress(),
+        int i = mContext.getResources().getIdentifier(mProducts.get(position).getImageAddress() + '0',
                 "drawable", mContext.getPackageName());
         if (i == 0){
             i = noImage;

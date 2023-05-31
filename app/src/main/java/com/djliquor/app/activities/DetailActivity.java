@@ -7,8 +7,10 @@ import android.widget.SearchView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
 import com.djliquor.app.R;
+import com.djliquor.app.adaptors.ImagePagerAdaptor;
 import com.djliquor.app.databinding.ActivityDetailBinding;
 import com.djliquor.app.models.Product;
 
@@ -25,7 +27,7 @@ public class DetailActivity extends AppCompatActivity {
         SearchView searchView = (SearchView) this.findViewById(R.id.search_view);
         ImageView backButton = (ImageView) this.findViewById(R.id.back_button);
 
-        ImageView imageView = (ImageView) this.findViewById(R.id.image_view);
+        ViewPager imageView = (ViewPager) this.findViewById(R.id.image_view_pager);
         TextView nameTextView = (TextView) this.findViewById(R.id.name_text_view);
         TextView priceTextView = (TextView) this.findViewById(R.id.price_text_view);
         TextView abvTextView = (TextView) this.findViewById(R.id.abv_text_view);
@@ -34,15 +36,23 @@ public class DetailActivity extends AppCompatActivity {
         searchView.setVisibility(View.INVISIBLE);
 
         Product product = getIntent().getSerializableExtra("product", Product.class);
-
-        int i = getResources().getIdentifier(product.getImageAddress(),
-                "drawable", getPackageName());
-        if (i == 0)
+        int numImages = product.getNumImages();
+        int[] images = new int[numImages];
+        int id;
+        for (int i = 0; i < numImages; i++)
         {
-            i = getResources().getIdentifier("baseline_image_24",
+            id = getResources().getIdentifier(product.getImageAddress() + i,
                     "drawable", getPackageName());
+            if (id == 0)
+            {
+                id = getResources().getIdentifier("baseline_image_24",
+                        "drawable", getPackageName());
+            }
+            images[i]= id;
         }
-        imageView.setImageResource(i);
+
+        ImagePagerAdaptor ViewPagerAdaptor = new ImagePagerAdaptor(DetailActivity.this, images);
+        imageView.setAdapter(ViewPagerAdaptor);
 
         nameTextView.setText(product.getName());
         priceTextView.setText("$" + product.getCost());

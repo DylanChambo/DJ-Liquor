@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:background="?attr/colorContainer"
-        android:paddingHorizontal="24dp">
+        android:paddingHorizontal="6dp">
         <ImageView
             android:id="@+id/category_img_view"
             android:layout_width="128dp"

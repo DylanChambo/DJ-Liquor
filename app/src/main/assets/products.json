@@ -110,5 +110,53 @@
     "cost": 39.99,
     "imageName": "elephant_shiraz",
     "description": "This is a shiraz."
+  },
+  {
+    "name": "Domaine de la Vinconniere, Muscadet Sur Lie 2021",
+    "category": 2,
+    "abv": 12.30,
+    "cost": 19.49,
+    "imageName": "domaine_muscadet",
+    "description": "This is a Muscadet"
+  },
+  {
+    "name": "Chateau Bois Pertuis, Bordeaux 2019",
+    "category": 2,
+    "abv": 15.40,
+    "cost": 22.29,
+    "imageName": "bordeaux_merlot",
+    "description": "This wine is from world-famous Bordeaux"
+  },
+  {
+    "name": "Nero Oro Nero D'Avola Appassimento Sicilia DOC 2021",
+    "category": 2,
+    "abv": 12.40,
+    "cost": 25.99,
+    "imageName": "nero_oro_appassimento",
+    "description": "This wine is from the jewel of southern Italy: Sicily"
+  },
+  {
+    "name": "Masseria Altemura 'Apulo' Primitivo 2019",
+    "category": 2,
+    "abv": 12.50,
+    "cost": 37.99,
+    "imageName": "masseria_apulo",
+    "description": "A fantastic wine"
+  },
+  {
+    "name": "Milenrama Rioja Reserva 2016",
+    "category": 2,
+    "abv": 11.30,
+    "cost": 19.99,
+    "imageName": "milenrama_rioja",
+    "description": "A classic Spanish Rioja"
+  },
+  {
+    "name": "Three Finger Jack Old Vine Zinfandel 2019",
+    "category": 2,
+    "abv": 14.70,
+    "cost": 21.65,
+    "imageName": "tfj_zinfandel",
+    "description": "A classic Californian Zinfandel"
   }
 ]

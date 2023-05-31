@@ -5,7 +5,7 @@
     "abv": 5.00,
     "cost": 1.49,
     "imageName": "tiger",
-    "description": "This is a Tiger beer"
+    "description": "\nDiscover Tiger Beer: Unleash the Exotic Flavors! \n\nExperience the essence of Asia with Tiger Beer. Crafted with passion, our iconic lager combines premium ingredients for a fiercely refreshing taste. Join the roar and savor the authentic brew that embodies adventure and camaraderie. Embrace the untamed flavor today!"
   },
   {
     "name": "Corona Extra",
@@ -13,7 +13,7 @@
     "abv": 4.50,
     "cost": 2.49,
     "imageName": "corona",
-    "description": "This is a corona"
+    "description": "\nCorona: Taste the Tropical Escape!\n\nTransport yourself to a sun-kissed paradise with Corona. Crafted with a touch of sunshine, this crisp and refreshing lager is the perfect companion for those seeking relaxation. Embrace the carefree spirit of beachside living as you savor the smooth and invigorating flavor of Corona. Unwind, refresh, and experience the taste of a tropical escape today!"
   },
   {
     "name": "Asahi",
@@ -21,7 +21,7 @@
     "abv": 5.00,
     "cost": 3.49,
     "imageName": "asahi",
-    "description": "This is a bottle of Asahi"
+    "description": "\nExperience the mastery of Japanese brewing with Asahi. Renowned for its exceptional quality and refined taste, Asahi is a lager that captures the essence of Japanese craftsmanship. Enjoy the smoothness and depth that sets Asahi apart, making it a go-to choice for beer enthusiasts worldwide. Elevate your beer-drinking experience with Asahi today!"
   },
   {
     "name": "Lion Red",
@@ -29,7 +29,7 @@
     "abv": 4.00,
     "cost": 1.49,
     "imageName": "lion_red",
-    "description": "This is a bottle of Lion Red"
+    "description": "\nGet ready to unleash the boldness with Lion Red. This iconic beer is a true Kiwi legend, embodying the spirit of New Zealand's beer culture. With its distinctive red label and rich heritage, Lion Red delivers a full-bodied taste that satisfies even the most discerning palates. From the first sip to the last, immerse yourself in the unmistakable flavor of Lion Red and experience the true essence of New Zealand brewing. Raise your glass and join the legacy of Lion Red today!"
   },
   {
     "name": "Heineken",
@@ -37,7 +37,7 @@
     "abv": 5.00,
     "cost": 2.99,
     "imageName": "heineken",
-    "description": "This is a Heineken"
+    "description": "\nIndulge in the unparalleled excellence of Heineken, the epitome of premium quality and global taste. With its distinctive green bottle and signature flavor, Heineken has become a symbol of sophistication and enjoyment around the world. Crafted with the finest ingredients and a centuries-old brewing tradition, every sip of Heineken is a testament to unparalleled craftsmanship. Immerse yourself in the crisp, refreshing notes that have made Heineken a true legend in the beer industry. Elevate your beer-drinking experience with the unmatched taste and international allure of Heineken today!"
   },
   {
     "name": "Export Citrus 0.0%",
@@ -45,7 +45,7 @@
     "abv": 0.00,
     "cost": 3.49,
     "imageName": "export_citrus",
-    "description": "This is an Export Citrus Zero"
+    "description": "\nQuench your thirst with Export Citrus 0.0%, the ultimate choice for those seeking a refreshing and flavorful zero-alcohol option. Bursting with vibrant citrus notes, this invigorating beverage delivers a guilt-free indulgence that keeps you hydrated and satisfied. Experience the perfect balance of zesty goodness without the alcohol, making Export Citrus 0.0% the ideal companion for any occasion. Enjoy the crisp and invigorating taste of Export Citrus 0.0% and elevate your beverage experience to new heights."
   },
   {
     "name": "Haagen",
@@ -53,7 +53,7 @@
     "abv": 4.00,
     "cost": 2.99,
     "imageName": "haagen",
-    "description": "This is Haagen's classic lager."
+    "description": "\nExperience the epitome of indulgence with Haagen. Crafted with the utmost care and passion, Haagen delivers a symphony of rich flavors and velvety smoothness that delights the senses. From its luxurious texture to its decadent taste, each spoonful of Haagen is a journey into pure bliss. Elevate your dessert experience and treat yourself to the exquisite pleasures of Haagen today."
   },
   {
     "name": "Heineken 0.0%",
@@ -61,7 +61,7 @@
     "abv": 0.00,
     "cost": 1.49,
     "imageName": "heineken_zero",
-    "description": "This is Heineken's zero-alcohol brew"
+    "description": "\nEnjoy the refreshing taste of Heineken 0.0%, a non-alcoholic brew that doesn't compromise on flavor. With its distinctively balanced profile and the same signature crispness as its alcoholic counterpart, Heineken 0.0% offers an invigorating and satisfying experience without the alcohol content. Embrace a mindful choice without sacrificing on taste and enjoy the uncompromising refreshment of Heineken 0.0% today."
   },
   {
     "name": "Speights Summit Ultra Low Carb",
@@ -69,7 +69,7 @@
     "abv": 4.20,
     "cost": 2.79,
     "imageName": "speights",
-    "description": "This is Speight's Summit Ultra Low Carb beer"
+    "description": "\nExperience the best of both worlds with Speight's Summit Ultra Low Carb. Savor the crisp and refreshing flavor of this brew while keeping your carb intake in check. With its carefully crafted recipe, Summit Ultra Low Carb delivers a light and satisfying taste without compromising on quality. Indulge in the perfect balance of flavor and health-consciousness with Speight's Summit Ultra Low Carb today."
   },
   {
     "name": "Peroni",
@@ -77,6 +77,6 @@
     "abv": 5.10,
     "cost": 3.59,
     "imageName": "peroni",
-    "description": "This is the classic Italian beer Peroni."
+    "description": "\nImmerse yourself in the rich heritage of Italian brewing with Peroni. This iconic lager is crafted with meticulous attention to detail, capturing the essence of Italian craftsmanship in every sip. With its elegant flavor profile and refreshing character, Peroni delivers a taste that is both timeless and sophisticated. Elevate your beer-drinking experience with the unmistakable quality and tradition of Peroni."
   }
 ]

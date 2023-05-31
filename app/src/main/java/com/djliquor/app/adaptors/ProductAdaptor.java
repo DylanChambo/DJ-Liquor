@@ -21,6 +21,7 @@ import java.util.List;
 
 public class ProductAdaptor extends RecyclerView.Adapter<ProductAdaptor.ProductViewHolder> {
     private final IProductView iProductView;
+    private final int noImage;
     ArrayList<Product> mProducts;
     Context mContext;
 
@@ -29,6 +30,8 @@ public class ProductAdaptor extends RecyclerView.Adapter<ProductAdaptor.ProductV
     public ProductAdaptor(Context context, ArrayList<Product> products, int resource,IProductView iProductView) {
         mContext = context;
         mProducts = products;
+        noImage = mContext.getResources().getIdentifier("baseline_image_24",
+                "drawable", mContext.getPackageName());
         this.iProductView = iProductView;
         layoutID = resource;
     }
@@ -45,6 +48,9 @@ public class ProductAdaptor extends RecyclerView.Adapter<ProductAdaptor.ProductV
         holder.textView.setText(mProducts.get(position).getName());
         int i = mContext.getResources().getIdentifier(mProducts.get(position).getImageAddress(),
                 "drawable", mContext.getPackageName());
+        if (i == 0){
+            i = noImage;
+        }
         holder.imageView.setImageResource(i);
     }
 

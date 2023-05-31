@@ -78,5 +78,85 @@
     "cost": 3.59,
     "imageName": "peroni",
     "description": "\nImmerse yourself in the rich heritage of Italian brewing with Peroni. This iconic lager is crafted with meticulous attention to detail, capturing the essence of Italian craftsmanship in every sip. With its elegant flavor profile and refreshing character, Peroni delivers a taste that is both timeless and sophisticated. Elevate your beer-drinking experience with the unmistakable quality and tradition of Peroni."
+  },
+  {
+    "name": "Stone Paddock Hawkes Bay Syrah 2021",
+    "category": 2,
+    "abv": 14.20,
+    "cost": 22.29,
+    "imageName": "stonepaddock_syrah",
+    "description": "This is a syrah."
+  },
+  {
+    "name": "Momo Organic Marlborough Sauvignon Blanc 2022",
+    "category": 2,
+    "abv": 15.20,
+    "cost": 30.99,
+    "imageName": "momo_sav",
+    "description": "This is a sauvignon blanc."
+  },
+  {
+    "name": "Little Giant Barossa Shiraz 2021",
+    "category": 2,
+    "abv": 11.50,
+    "cost": 18.99,
+    "imageName": "barossa_shiraz",
+    "description": "This is an Aussie Shiraz."
+  },
+  {
+    "name": "Elephant in the Room Langhorne Creek Shiraz 2020",
+    "category": 2,
+    "abv": 13.40,
+    "cost": 39.99,
+    "imageName": "elephant_shiraz",
+    "description": "This is a shiraz."
+  },
+  {
+    "name": "Domaine de la Vinconniere, Muscadet Sur Lie 2021",
+    "category": 2,
+    "abv": 12.30,
+    "cost": 19.49,
+    "imageName": "domaine_muscadet",
+    "description": "This is a Muscadet"
+  },
+  {
+    "name": "Chateau Bois Pertuis, Bordeaux 2019",
+    "category": 2,
+    "abv": 15.40,
+    "cost": 22.29,
+    "imageName": "bordeaux_merlot",
+    "description": "This wine is from world-famous Bordeaux"
+  },
+  {
+    "name": "Nero Oro Nero D'Avola Appassimento Sicilia DOC 2021",
+    "category": 2,
+    "abv": 12.40,
+    "cost": 25.99,
+    "imageName": "nero_oro_appassimento",
+    "description": "This wine is from the jewel of southern Italy: Sicily"
+  },
+  {
+    "name": "Masseria Altemura 'Apulo' Primitivo 2019",
+    "category": 2,
+    "abv": 12.50,
+    "cost": 37.99,
+    "imageName": "masseria_apulo",
+    "description": "A fantastic wine"
+  },
+  {
+    "name": "Milenrama Rioja Reserva 2016",
+    "category": 2,
+    "abv": 11.30,
+    "cost": 19.99,
+    "imageName": "milenrama_rioja",
+    "description": "A classic Spanish Rioja"
+  },
+  {
+    "name": "Three Finger Jack Old Vine Zinfandel 2019",
+    "category": 2,
+    "abv": 14.70,
+    "cost": 21.65,
+    "imageName": "tfj_zinfandel",
+    "description": "A classic Californian Zinfandel"
   }
 ]

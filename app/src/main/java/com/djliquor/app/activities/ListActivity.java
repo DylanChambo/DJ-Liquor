@@ -116,7 +116,7 @@ public class ListActivity extends AppCompatActivity {
         ArrayList<Product> searchResults = generateData();
         if (query != "")
         {
-            searchResults.removeIf(product -> !product.getName().contains(query));
+            searchResults.removeIf(product -> !product.getName().toLowerCase().contains(query.toLowerCase()));
         }
 
         if (category != Type.None)

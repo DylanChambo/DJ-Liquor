@@ -158,5 +158,49 @@
     "cost": 21.65,
     "imageName": "tfj_zinfandel",
     "description": "\nTasting Notes: \n\nThree Finger Jack Old Vine Zinfandel 2019 is a captivating red wine that celebrates the character of California's old vine Zinfandel. On the nose, it entices with aromas of ripe blackberries, cherries, and plums, complemented by subtle hints of baking spices and a touch of vanilla. The palate is greeted with a luscious and velvety texture, where flavors of juicy black fruits take center stage. Ripe blackberries, dark cherries, and a touch of raspberry intermingle with notes of black pepper and a hint of dark chocolate, creating a complex and layered profile. With its well-integrated tannins and balanced acidity, this Zinfandel delivers a smooth and lingering finish. Three Finger Jack Old Vine Zinfandel 2019 is a true embodiment of California's Zinfandel heritage, offering a bold and flavorful wine experience."
+  },
+
+
+
+
+  {
+    "name": "Long White Vodka Raspberry",
+    "category": 5,
+    "abv": 4.8,
+    "cost": 3.20,
+    "imageName": "long_white_rasp",
+    "description": "Triple distilled vodka with naturally flavoured NZ sparkling water. It's light and refreshing and set to become your new best friend this summer!"
+  },
+  {
+    "name": "Long White Vodka Passionfruit",
+    "category": 5,
+    "abv": 4.8,
+    "cost": 3.20,
+    "imageName": "long_white_passion",
+    "description": "Triple distilled vodka with naturally flavoured NZ sparkling water. It's light and refreshing and set to become your new best friend this summer!"
+  },
+  {
+    "name": "Vodka Cruiser Wild Raspberry",
+    "category": 5,
+    "abv": 4.8,
+    "cost": 3.20,
+    "imageName": "cruiser_rasp",
+    "description": ""
+  },
+  {
+    "name": "Woodstock Bourbon And Cola",
+    "category": 5,
+    "abv": 4.8,
+    "cost": 3.20,
+    "imageName": "woodstock_bourbon_cola",
+    "description": "Pals. The only thing that beats them is pals, with Pals. Unless of course you don't actually have any pals. In which case, have these Pals, with your imaginary pal, Lance. Or maybe you do have pals and just aren't good at sharing. And that's fair enough. Pals are very tasty.\n\nWith less than 1.1g sugar per 100mls and all natural flavours/extracts, Pals are a great option for any social occasion. Pals are also gluten free and vegan friendly. \n\nThis refreshing option is a beautiful blend of premium vodka, watermelon, mint and soda water. Clean, fresh and simple."
+  },
+  {
+    "name": "Pals Vodka, Watermelon, Mint & Soda",
+    "category": 5,
+    "abv": 5.0,
+    "cost": 2.20,
+    "imageName": "pals_watermelon",
+    "description": "Woodstock Bourbon Cola 5% 10 Pack Can 330ml"
   }
 ]

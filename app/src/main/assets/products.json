@@ -85,7 +85,7 @@
     "abv": 14.20,
     "cost": 22.29,
     "imageName": "stonepaddock_syrah",
-    "description": "This is a syrah."
+    "description": "\nTasing Notes:\n\nStone Paddock Hawke's Bay Syrah 2021 is a captivating red wine that showcases the essence of Hawke's Bay's Syrah. On the nose, it entices with enticing aromas of ripe blackberries, plums, and violets, accompanied by hints of cracked black pepper and a touch of smoky oak. The palate is greeted with a medium to full-bodied texture, delivering a harmonious blend of flavors. Ripe dark fruits, such as blackcurrant and blueberry, mingle with notes of black olive, spice, and a subtle earthiness. With its velvety tannins and balanced acidity, this Syrah offers a smooth and lingering finish. Stone Paddock Hawke's Bay Syrah 2021 is a remarkable expression of Hawke's Bay's terroir, displaying elegance and depth in every sip."
   },
   {
     "name": "Momo Organic Marlborough Sauvignon Blanc 2022",
@@ -93,7 +93,7 @@
     "abv": 15.20,
     "cost": 30.99,
     "imageName": "momo_sav",
-    "description": "This is a sauvignon blanc."
+    "description": "\nTasting Notes:\n\nMomo Organic Marlborough Sauvignon Blanc 2022 is a refreshing white wine that beautifully captures the essence of Marlborough. On the nose, it delights with vibrant aromas of tropical fruits, such as passionfruit and pineapple, intertwined with hints of citrus and fresh herbs. The palate is treated to a lively and crisp experience, with flavors of zesty lemon, juicy grapefruit, and a subtle minerality that adds depth. With its bright acidity and clean, refreshing finish, Momo Organic Sauvignon Blanc is a true expression of Marlborough's signature style. Embrace the organic goodness and savor the vibrant flavors of Momo today."
   },
   {
     "name": "Little Giant Barossa Shiraz 2021",
@@ -101,7 +101,7 @@
     "abv": 11.50,
     "cost": 18.99,
     "imageName": "barossa_shiraz",
-    "description": "This is an Aussie Shiraz."
+    "description": "\nTasting Notes:\n\nLittle Giant Barossa Shiraz 2021 delights with enticing aromas of ripe blackberries, dark cherries, and plum, accompanied by hints of warm spices and a touch of vanilla. On the palate, this Shiraz showcases a rich and velvety texture, with flavors of luscious black fruits like blackberry and blackcurrant, layered with nuances of chocolate and subtle oak. With well-integrated tannins and balanced acidity, it exhibits excellent structure and a medium to full body, providing a smooth and satisfying mouthfeel. The wine concludes with a lingering finish, leaving traces of dark fruit and a touch of spice that tantalize the palate. Little Giant Barossa Shiraz 2021 is a standout expression of Barossa Valley's renowned Shiraz, offering bold and flavorful enjoyment."
   },
   {
     "name": "Elephant in the Room Langhorne Creek Shiraz 2020",
@@ -109,7 +109,7 @@
     "abv": 13.40,
     "cost": 39.99,
     "imageName": "elephant_shiraz",
-    "description": "This is a shiraz."
+    "description": "\nTasting Notes:\n\nElephant in the Room Langhorne Creek Shiraz 2020 presents captivating aromas of ripe dark berries, such as blackberries and black cherries, intertwined with subtle hints of black pepper and earthy spices. On the palate, this Shiraz showcases a full-bodied and velvety texture, delivering a rich tapestry of flavors. Ripe black fruits dominate, with notes of plum and blueberry, complemented by a touch of dark chocolate and a hint of smoky oak. Well-integrated tannins and balanced acidity provide structure and a smooth, lingering finish. Elephant in the Room Langhorne Creek Shiraz 2020 is a remarkable expression of the region, offering a harmonious and satisfying wine experience."
   },
   {
     "name": "Domaine de la Vinconniere, Muscadet Sur Lie 2021",
@@ -117,7 +117,7 @@
     "abv": 12.30,
     "cost": 19.49,
     "imageName": "domaine_muscadet",
-    "description": "This is a Muscadet"
+    "description": "\nTasting Notes:\n\nDomaine de la Vinconniere, Muscadet Sur Lie 2021 entices with its fresh and vibrant character. On the nose, delicate aromas of citrus fruits, green apple, and white flowers gracefully emerge. The palate is treated to a crisp and lively experience, with flavors of zesty lemon, juicy pear, and a subtle minerality that adds depth. The wine's extended lees aging imparts a lovely creaminess and complexity, enhancing its overall texture. With a refreshing acidity and a clean, lingering finish, Domaine de la Vinconniere, Muscadet Sur Lie 2021 showcases the true essence of this classic Loire Valley appellation, making it a delightful choice for any occasion."
   },
   {
     "name": "Chateau Bois Pertuis, Bordeaux 2019",
@@ -125,7 +125,7 @@
     "abv": 15.40,
     "cost": 22.29,
     "imageName": "bordeaux_merlot",
-    "description": "This wine is from world-famous Bordeaux"
+    "description": "\nTasting Notes: \n\nChateau Bois Pertuis, Bordeaux 2019 is a captivating red wine that embodies the essence of the Bordeaux region. On the nose, it reveals an inviting bouquet of ripe blackberries, plums, and dark cherries, accompanied by subtle notes of cedar and a touch of spice. The palate is greeted with a velvety texture and a harmonious blend of flavors. Juicy black fruits, including blackcurrant and blackberry, mingle with hints of tobacco and cocoa, creating a complex and satisfying profile. Well-structured with refined tannins and balanced acidity, this Bordeaux delivers a lingering finish that leaves a pleasant impression. Chateau Bois Pertuis, Bordeaux 2019 is a testament to the renowned winemaking traditions of the region, showcasing elegance and depth in every sip."
   },
   {
     "name": "Nero Oro Nero D'Avola Appassimento Sicilia DOC 2021",
@@ -133,7 +133,7 @@
     "abv": 12.40,
     "cost": 25.99,
     "imageName": "nero_oro_appassimento",
-    "description": "This wine is from the jewel of southern Italy: Sicily"
+    "description": "\nTasting Notes:\n\nNero Oro Nero D'Avola Appassimento Sicilia DOC 2021 is a captivating red wine that showcases the unique characteristics of Sicilian terroir. On the nose, it entices with enticing aromas of ripe blackberries, cherries, and plums, complemented by subtle hints of dried herbs and a touch of vanilla. The palate is greeted with a velvety and full-bodied texture, where flavors of rich dark fruits, such as blackcurrant and black cherry, take center stage. Notes of dark chocolate and a hint of spice add depth and complexity to the wine. With well-integrated tannins and balanced acidity, it offers a smooth and lingering finish. Nero Oro Nero D'Avola Appassimento Sicilia DOC 2021 is a remarkable expression of the Nero d'Avola grape, capturing the essence of Sicilian winemaking and offering a truly enjoyable wine experience."
   },
   {
     "name": "Masseria Altemura 'Apulo' Primitivo 2019",
@@ -141,7 +141,7 @@
     "abv": 12.50,
     "cost": 37.99,
     "imageName": "masseria_apulo",
-    "description": "A fantastic wine"
+    "description": "\nTasting Notes:\n\nMasseria Altemura 'Apulo' Primitivo 2019 is a captivating red wine that showcases the true essence of Primitivo from Apulia. On the nose, it reveals inviting aromas of ripe blackberries, plums, and cherries, intertwined with subtle hints of vanilla and sweet spices. The palate is greeted with a full-bodied and velvety texture, where flavors of juicy black fruits take center stage. Ripe blackberries and dark cherries mingle with notes of black pepper and a touch of cocoa, creating a complex and harmonious profile. Well-structured with smooth tannins and balanced acidity, this Primitivo delivers a long and satisfying finish. Masseria Altemura 'Apulo' Primitivo 2019 is a true testament to the winemaking excellence of Apulia, offering a delightful and memorable wine experience."
   },
   {
     "name": "Milenrama Rioja Reserva 2016",
@@ -149,7 +149,7 @@
     "abv": 11.30,
     "cost": 19.99,
     "imageName": "milenrama_rioja",
-    "description": "A classic Spanish Rioja"
+    "description": "\nTasting Notes:\n\nMilenrama Rioja Reserva 2016 is a captivating red wine that embodies the essence of Rioja's winemaking tradition. On the nose, it entices with inviting aromas of ripe red berries, cherries, and plums, accompanied by subtle hints of vanilla and toasted oak. The palate is treated to a velvety texture and a harmonious blend of flavors. Ripe red fruits, such as strawberries and raspberries, mingle with notes of tobacco and a touch of spice, creating a complex and well-rounded profile. With its balanced acidity and polished tannins, this Reserva offers a smooth and lingering finish. Milenrama Rioja Reserva 2016 is a testament to the craftsmanship of Rioja wines, showcasing elegance and depth in every sip."
   },
   {
     "name": "Three Finger Jack Old Vine Zinfandel 2019",
@@ -157,6 +157,6 @@
     "abv": 14.70,
     "cost": 21.65,
     "imageName": "tfj_zinfandel",
-    "description": "A classic Californian Zinfandel"
+    "description": "\nTasting Notes: \n\nThree Finger Jack Old Vine Zinfandel 2019 is a captivating red wine that celebrates the character of California's old vine Zinfandel. On the nose, it entices with aromas of ripe blackberries, cherries, and plums, complemented by subtle hints of baking spices and a touch of vanilla. The palate is greeted with a luscious and velvety texture, where flavors of juicy black fruits take center stage. Ripe blackberries, dark cherries, and a touch of raspberry intermingle with notes of black pepper and a hint of dark chocolate, creating a complex and layered profile. With its well-integrated tannins and balanced acidity, this Zinfandel delivers a smooth and lingering finish. Three Finger Jack Old Vine Zinfandel 2019 is a true embodiment of California's Zinfandel heritage, offering a bold and flavorful wine experience."
   }
 ]

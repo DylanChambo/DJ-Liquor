@@ -8,19 +8,75 @@
     "description": "This is a Tiger beer"
   },
   {
-    "name": "Tiger",
+    "name": "Corona Extra",
     "category": 1,
-    "abv": 5.00,
-    "cost": 1.49,
-    "imageName": "tiger",
-    "description": "This is a Tiger beer"
+    "abv": 4.50,
+    "cost": 2.49,
+    "imageName": "corona",
+    "description": "This is a corona"
   },
   {
-    "name": "Tiger",
+    "name": "Asahi",
     "category": 1,
     "abv": 5.00,
+    "cost": 3.49,
+    "imageName": "asahi",
+    "description": "This is a bottle of Asahi"
+  },
+  {
+    "name": "Lion Red",
+    "category": 1,
+    "abv": 4.00,
     "cost": 1.49,
-    "imageName": "tiger",
-    "description": "This is a Tiger beer"
+    "imageName": "lion_red",
+    "description": "This is a bottle of Lion Red"
+  },
+  {
+    "name": "Heineken",
+    "category": 1,
+    "abv": 5.00,
+    "cost": 2.99,
+    "imageName": "heineken",
+    "description": "This is a Heineken"
+  },
+  {
+    "name": "Export Citrus 0.0%",
+    "category": 1,
+    "abv": 0.00,
+    "cost": 3.49,
+    "imageName": "export_citrus",
+    "description": "This is an Export Citrus Zero"
+  },
+  {
+    "name": "Haagen",
+    "category": 1,
+    "abv": 4.00,
+    "cost": 2.99,
+    "imageName": "haagen",
+    "description": "This is Haagen's classic lager."
+  },
+  {
+    "name": "Heineken 0.0%",
+    "category": 1,
+    "abv": 0.00,
+    "cost": 1.49,
+    "imageName": "heineken_zero",
+    "description": "This is Heineken's zero-alcohol brew"
+  },
+  {
+    "name": "Speights Summit Ultra Low Carb",
+    "category": 1,
+    "abv": 4.20,
+    "cost": 2.79,
+    "imageName": "speights",
+    "description": "This is Speight's Summit Ultra Low Carb beer"
+  },
+  {
+    "name": "Peroni",
+    "category": 1,
+    "abv": 5.10,
+    "cost": 3.59,
+    "imageName": "peroni",
+    "description": "This is the classic Italian beer Peroni."
   }
 ]

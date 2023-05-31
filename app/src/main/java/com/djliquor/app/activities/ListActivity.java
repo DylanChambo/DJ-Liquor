@@ -5,6 +5,7 @@ import static com.djliquor.app.providers.ProductProvider.generateData;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ImageView;
@@ -66,6 +67,8 @@ public class ListActivity extends AppCompatActivity implements IProductView {
             public void onClick(View v) {
                 searchView.setQuery(finalSearch, false);
                 setBackButtonSearch(backButton, searchView);
+                searchView.startAnimation(AnimationUtils.loadAnimation(
+                        ListActivity.this, R.anim.righttoleft));
             }
         });
 
@@ -73,6 +76,8 @@ public class ListActivity extends AppCompatActivity implements IProductView {
             @Override
             public boolean onClose() {
                 setBackButtonTraverse(backButton);
+                searchView.startAnimation(AnimationUtils.loadAnimation(
+                        ListActivity.this, R.anim.lefttoright));
                 return false;
             }
         });

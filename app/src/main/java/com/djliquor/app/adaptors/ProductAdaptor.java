@@ -4,31 +4,39 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.djliquor.app.intefaces.IProductView;
 import com.djliquor.app.R;
+import com.djliquor.app.models.Category;
 import com.djliquor.app.models.Product;
 import java.util.ArrayList;
+import java.util.List;
 
 public class ProductAdaptor extends RecyclerView.Adapter<ProductAdaptor.ProductViewHolder> {
     private final IProductView iProductView;
     ArrayList<Product> mProducts;
     Context mContext;
-    public ProductAdaptor(Context context, ArrayList<Product> products, IProductView iProductView) {
+
+    int layoutID;
+
+    public ProductAdaptor(Context context, ArrayList<Product> products, int resource,IProductView iProductView) {
         mContext = context;
         mProducts = products;
         this.iProductView = iProductView;
+        layoutID = resource;
     }
     @NonNull
     @Override
     public ProductAdaptor.ProductViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(mContext);
-        View view = inflater.inflate(R.layout.product_recycler_view_item, parent, false);
+        View view = inflater.inflate(layoutID, parent, false);
         return new ProductAdaptor.ProductViewHolder(view, iProductView);
     }
 

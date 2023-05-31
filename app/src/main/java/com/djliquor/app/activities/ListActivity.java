@@ -5,6 +5,8 @@ import static com.djliquor.app.providers.ProductProvider.generateData;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.SearchView;
 import android.widget.TextView;
@@ -17,6 +19,7 @@ import com.djliquor.app.intefaces.IProductView;
 import com.djliquor.app.R;
 import com.djliquor.app.adaptors.ProductAdaptor;
 import com.djliquor.app.databinding.ActivityListBinding;
+import com.djliquor.app.databinding.ActivityMainBinding;
 import com.djliquor.app.models.Product;
 import com.djliquor.app.models.Type;
 
@@ -128,7 +131,7 @@ public class ListActivity extends AppCompatActivity implements IProductView {
         RecyclerView productView = this.findViewById(R.id.product_view);
         productView.setLayoutManager(new GridLayoutManager(this, 2));
 
-        ProductAdaptor productAdaptor = new ProductAdaptor(this,searchResults, this);
+        ProductAdaptor productAdaptor = new ProductAdaptor(this,searchResults, R.layout.product_recycler_view_item, this);
         productView.setAdapter(productAdaptor);
     }
 

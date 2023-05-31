@@ -20,7 +20,9 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"/>
+        android:orientation="horizontal"
+        android:id="@+id/popular_view"
+        tools:listitem="@layout/product_recycler_view_item"/>
 
     <TextView
         android:layout_width="match_parent"

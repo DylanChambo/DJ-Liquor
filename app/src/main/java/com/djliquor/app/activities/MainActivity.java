@@ -32,22 +32,20 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements IProductView {
     private ActivityMainBinding binding;
-    private ArrayList<Product> products;
+    private static ArrayList<Product> popularProducts;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        products = new ArrayList<Product>(generateData().subList(0,3));
+        popularProducts = new ArrayList<Product>(generateData().subList(0,3));
 
         SearchView searchView = (SearchView) this.findViewById(R.id.search_view);
         ImageView backButton = (ImageView) this.findViewById(R.id.back_button);
         GridView categoryView = (GridView) this.findViewById(R.id.categoryView);
-        RecyclerView productView = this.findViewById(R.id.popular_view);
-        productView.setLayoutManager(new GridLayoutManager(this, 3));
-        ProductAdaptor productAdaptor = new ProductAdaptor(this,products, R.layout.popular_recycler_view_item, this);
-        productView.setAdapter(productAdaptor);
+
+        resetPopular();
 
         List<Category> categories = CategoryProvider.getCategories();
         CategoryAdaptor categoryAdapter = new CategoryAdaptor(this, R.layout.category_grid_view_item, categories);
@@ -127,10 +125,34 @@ public class MainActivity extends AppCompatActivity implements IProductView {
 
     @Override
     public void onItemClick(int position) {
-        Product item = products.get(position);
-
+        Product item = popularProducts.get(position);
+        updatePopularProducts(item);
         Intent intent = new Intent(MainActivity.this, DetailActivity.class);
         intent.putExtra("product", item);
         startActivity(intent);
+    }
+    @Override
+    protected void onResume()
+    {
+        super.onResume();
+        resetPopular();
+    }
+
+    public void resetPopular()
+    {
+        RecyclerView productView = this.findViewById(R.id.popular_view);
+        productView.setLayoutManager(new GridLayoutManager(this, 3));
+        ProductAdaptor productAdaptor = new ProductAdaptor(this,popularProducts, R.layout.popular_recycler_view_item, this);
+        productView.setAdapter(productAdaptor);
+    }
+
+    public static void updatePopularProducts(Product product)
+    {
+        if (!popularProducts.contains(product)) {
+            for (int i = popularProducts.size() - 1; i >= 1; i--) {
+                popularProducts.set(i, popularProducts.get(i - 1));
+            }
+            popularProducts.set(0, product);
+        }
     }
 }

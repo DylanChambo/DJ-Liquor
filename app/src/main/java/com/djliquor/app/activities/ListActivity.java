@@ -138,7 +138,7 @@ public class ListActivity extends AppCompatActivity implements IProductView {
     @Override
     public void onItemClick(int position) {
         Product item = searchResults.get(position);
-
+        MainActivity.updatePopularProducts(item);
         Intent intent = new Intent(ListActivity.this, DetailActivity.class);
         intent.putExtra("product", item);
         startActivity(intent);

@@ -2,4 +2,5 @@
     <string name="app_name">DJ Liquor</string>
     <string name="yes">YES</string>
     <string name="no">NO</string>
+    <string name="tooltipText">Search e.g vodka</string>
 </resources>

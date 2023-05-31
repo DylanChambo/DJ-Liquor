@@ -5,6 +5,7 @@
     android:layout_height="wrap_content"
     android:fitsSystemWindows="false">
     <Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
@@ -52,7 +53,8 @@
                 android:layout_centerVertical="true"
                 android:layout_alignParentEnd="true"
                 android:queryBackground="?attr/queryBackground"
-                android:searchIcon="@drawable/baseline_search_24"/>
+                android:searchIcon="@drawable/baseline_search_24"
+                android:queryHint="@string/tooltipText"/>
         </RelativeLayout>
     </Toolbar>
 </com.google.android.material.appbar.AppBarLayout>

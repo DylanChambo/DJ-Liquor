@@ -10,6 +10,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.transition.TransitionManager;
+import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.SearchView;
@@ -63,14 +65,22 @@ public class MainActivity extends AppCompatActivity implements IProductView {
         searchView.setOnSearchClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                backButton.setVisibility(View.VISIBLE);
+                backButton.startAnimation(AnimationUtils.loadAnimation(
+                        MainActivity.this, R.anim.fadein));
+                searchView.startAnimation(AnimationUtils.loadAnimation(
+                        MainActivity.this, R.anim.righttoleft));
+//                TransitionManager.beginDelayedTransition( MainActivity.this.findViewById(R.id.toolbar));
             }
         });
 
         searchView.setOnCloseListener(new SearchView.OnCloseListener() {
             @Override
             public boolean onClose() {
-                backButton.setVisibility(View.INVISIBLE);
+                backButton.startAnimation(AnimationUtils.loadAnimation(
+                        MainActivity.this, R.anim.fadeout));
+
+                searchView.startAnimation(AnimationUtils.loadAnimation(
+                        MainActivity.this, R.anim.lefttoright));
                 return false;
             }
         });

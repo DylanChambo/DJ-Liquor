@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements IProductView {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        popularProducts = new ArrayList<Product>(generateData().subList(0,3));
+        popularProducts = new ArrayList<Product>(generateData(this).subList(0,3));
 
         SearchView searchView = (SearchView) this.findViewById(R.id.search_view);
         ImageView backButton = (ImageView) this.findViewById(R.id.back_button);

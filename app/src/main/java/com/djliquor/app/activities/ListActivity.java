@@ -116,7 +116,7 @@ public class ListActivity extends AppCompatActivity implements IProductView {
     }
 
     public void updateFilter(String query, Type category) {
-        searchResults = generateData();
+        searchResults = generateData(this);
         if (query != "")
         {
             searchResults.removeIf(product -> !product.getName().toLowerCase().contains(query.toLowerCase()));

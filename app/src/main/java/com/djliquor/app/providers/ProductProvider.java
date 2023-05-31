@@ -1,12 +1,21 @@
 package com.djliquor.app.providers;
 
+import android.content.Context;
+
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 
 import com.djliquor.app.models.Product;
 import com.djliquor.app.models.Type;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 
 public class ProductProvider {
+
 
     static String[] names = {"Tiger", "Corona Extra", "Asahi", "Lion Red", "Heineken", "Export Citrus 0.0%", "Haagen", "Heineken 0.0%", "Speights Summit Ultra Low Carb", "Peroni",
     "Stone Paddock Hawkes Bay Syrah 2021", "Momo Organic Marlborough Sauvignon Blanc 2022", "Little Giant Barossa Shiraz 2021", "Elephant in the Room Langhorne Creek Shiraz 2020", "Domaine de la Vinconniere, Muscadet Sur Lie 2021", "Chateau Bois Pertuis, Bordeaux 2019", "Nero Oro Nero D'Avola Appassimento Sicilia DOC 2021", "Masseria Altemura 'Apulo' Primitivo 2019", "Milenrama Rioja Reserva 2016", "Three Finger Jack Old Vine Zinfandel 2019"};
@@ -23,16 +32,40 @@ public class ProductProvider {
     static String[] description = {"This is a Tiger beer", "This is a corona", "This is a bottle of Asahi", "This is a bottle of Lion Red", "This is a Heineken", "This is an Export Citrus Zero", "This is Haagen's classic lager.", "This is Heineken's zero-alcohol brew", "This is Speight's Summit Ultra Low Carb beer", "This is the classic Italian beer Peroni.",
     "this is a syrah", "this is a sauvignon blanc", "this is an Aussie Shiraz", "This is a shiraz", "This is a Muscadet", "This wine is from world-famous Bordeaux", "This wine is from the jewel of southern Italy: Sicily", "A fantastic wine", "A classic Spanish Rioja", "A classic Californian Zinfandel"};
 
-    public static ArrayList<Product> generateData(){
+    public static ArrayList<Product> generateData(Context context){
         ArrayList<Product> drinks = new ArrayList<Product>();
+        Type[] types = Type.values();
 
-        for (int i = 0; i<20; i++) {
-            Product newDrink = new Product(ids[i], abv[i], cost[i], description[i], category[i], imageAdd[i], names[i]);
-            drinks.add(newDrink);
+        String json;
+        try
+        {
+            InputStream is = context.getAssets().open("products.json");
+            int size = is.available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+
+            json = new String(buffer, "UTF-8");
+            JSONArray jsonArray = new JSONArray(json);
+
+            for (int i = 0; i < jsonArray.length(); i++) {
+                JSONObject obj = jsonArray.getJSONObject(i);
+                Product newDrink = new Product(i,
+                        (float)obj.getDouble("abv"),
+                        (float)obj.getDouble("cost"),
+                        obj.getString("description"),
+                        types[obj.getInt("category")],
+                        obj.getString("imageName"),
+                        obj.getString("name"));
+                drinks.add(newDrink);
+            }
+        } catch (IOException e)
+        {
+            e.printStackTrace();
+        } catch (JSONException e) {
+            e.printStackTrace();
         }
-
         return drinks;
-
     }
 
 

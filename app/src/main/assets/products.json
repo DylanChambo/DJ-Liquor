@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Tiger",
+    "category": 1,
+    "abv": 5.00,
+    "cost": 1.49,
+    "imageName": "tiger",
+    "description": "This is a Tiger beer"
+  },
+  {
+    "name": "Tiger",
+    "category": 1,
+    "abv": 5.00,
+    "cost": 1.49,
+    "imageName": "tiger",
+    "description": "This is a Tiger beer"
+  },
+  {
+    "name": "Tiger",
+    "category": 1,
+    "abv": 5.00,
+    "cost": 1.49,
+    "imageName": "tiger",
+    "description": "This is a Tiger beer"
+  }
+]

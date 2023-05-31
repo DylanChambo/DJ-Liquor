@@ -17,7 +17,7 @@ import com.djliquor.app.models.Product;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProductAdaptor extends ArrayAdapter<Product> {
+public class ProductAdaptor extends ArrayAdapter {
 
     int mLayoutID;
     ArrayList<Product> mProducts;

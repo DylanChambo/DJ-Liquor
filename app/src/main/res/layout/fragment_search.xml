@@ -15,12 +15,18 @@
         android:textSize="24dp"
         android:padding="10dp"/>
 
-    <androidx.recyclerview.widget.RecyclerView
+    <GridView
+        android:id="@+id/search_test_View"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:horizontalSpacing="12dp"
+        android:numColumns="2"
+        android:verticalSpacing="12dp"
+        android:layout_gravity="bottom"
+        tools:listitem="@layout/category_list_view_item">
 
-
-    </androidx.recyclerview.widget.RecyclerView>
+    </GridView>
 
 
 </LinearLayout>

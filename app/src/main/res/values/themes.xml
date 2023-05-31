@@ -14,7 +14,6 @@
     <style name="Theme.DJLiquor" parent="Base.Theme.DJLiquor">
         <item name="android:textColor">?attr/colorOnBackground</item>
         <item name="android:colorBackground">?attr/backgroundColor</item>
-        <item name="android:textColorPrimary">?attr/colorOnPrimary</item>
         <item name="android:statusBarColor">?attr/colorPrimary</item>
         <item name="android:editTextColor">?attr/textColorSearchUrl</item>
     </style>

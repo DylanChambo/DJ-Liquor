@@ -39,18 +39,37 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-
+        SearchView searchView = (SearchView) this.findViewById(R.id.search_view);
+        ImageView backButton = (ImageView) this.findViewById(R.id.back_button);
+        GridView categoryView = (GridView) this.findViewById(R.id.categoryView);
 
         List<Category> categories = CategoryProvider.getCategories();
         CategoryAdaptor categoryAdapter = new CategoryAdaptor(this, R.layout.category_list_view_item, categories);
 
-        GridView categoryView = (GridView) this.findViewById(R.id.categoryView);
         categoryView.setAdapter(categoryAdapter);
 
-        ImageView backButton = (ImageView) this.findViewById(R.id.back_button);
         backButton.setVisibility(View.INVISIBLE);
+        backButton.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View v) {
+              searchView.setQuery("", false);
+              searchView.setIconified(true);
+          }
+      });
+        searchView.setOnSearchClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                backButton.setVisibility(View.VISIBLE);
+            }
+        });
 
-        SearchView searchView = (SearchView) this.findViewById(R.id.search_view);
+        searchView.setOnCloseListener(new SearchView.OnCloseListener() {
+            @Override
+            public boolean onClose() {
+                backButton.setVisibility(View.INVISIBLE);
+                return false;
+            }
+        });
 
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override

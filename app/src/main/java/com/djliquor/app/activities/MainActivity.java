@@ -1,33 +1,22 @@
 package com.djliquor.app.activities;
 
-import androidx.activity.OnBackPressedDispatcher;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.fragment.NavHostFragment;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.SearchView;
 
 import android.view.View;
 import android.widget.GridView;
-import android.widget.Toast;
 
 import com.djliquor.app.R;
 import com.djliquor.app.adaptors.CategoryAdaptor;
 import com.djliquor.app.databinding.ActivityMainBinding;
 import com.djliquor.app.models.Category;
-import com.djliquor.app.models.Product;
 import com.djliquor.app.providers.CategoryProvider;
 
 import java.util.List;
@@ -46,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         GridView categoryView = (GridView) this.findViewById(R.id.categoryView);
 
         List<Category> categories = CategoryProvider.getCategories();
-        CategoryAdaptor categoryAdapter = new CategoryAdaptor(this, R.layout.category_list_view_item, categories);
+        CategoryAdaptor categoryAdapter = new CategoryAdaptor(this, R.layout.category_grid_view_item, categories);
 
         categoryView.setAdapter(categoryAdapter);
 

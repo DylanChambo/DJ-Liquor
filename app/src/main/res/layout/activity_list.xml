@@ -16,8 +16,8 @@
         android:textSize="24dp"
         android:padding="10dp"/>
 
-    <GridView
-        android:id="@+id/grid_view"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/product_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginHorizontal="8dp"
@@ -25,9 +25,9 @@
         android:numColumns="2"
         android:verticalSpacing="12dp"
         android:layout_gravity="bottom"
-        tools:listitem="@layout/category_list_view_item">
+        tools:listitem="@layout/category_grid_view_item">
 
-    </GridView>
+    </androidx.recyclerview.widget.RecyclerView>
 
 
 </LinearLayout>

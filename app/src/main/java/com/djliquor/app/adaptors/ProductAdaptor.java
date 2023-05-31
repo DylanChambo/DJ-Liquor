@@ -4,58 +4,66 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
 
+import com.djliquor.app.intefaces.IProductView;
 import com.djliquor.app.R;
-import com.djliquor.app.models.Category;
 import com.djliquor.app.models.Product;
 import java.util.ArrayList;
-import java.util.List;
 
-public class ProductAdaptor extends ArrayAdapter {
-
-    int mLayoutID;
+public class ProductAdaptor extends RecyclerView.Adapter<ProductAdaptor.ProductViewHolder> {
+    private final IProductView iProductView;
     ArrayList<Product> mProducts;
     Context mContext;
-
-    public ProductAdaptor(Context context, int resource, ArrayList<Product> products) {
-        super(context, resource, products);
-        mLayoutID = resource;
+    public ProductAdaptor(Context context, ArrayList<Product> products, IProductView iProductView) {
         mContext = context;
         mProducts = products;
-
+        this.iProductView = iProductView;
+    }
+    @NonNull
+    @Override
+    public ProductAdaptor.ProductViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        LayoutInflater inflater = LayoutInflater.from(mContext);
+        View view = inflater.inflate(R.layout.product_recycler_view_item, parent, false);
+        return new ProductAdaptor.ProductViewHolder(view, iProductView);
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
-
-        View currentView = convertView;
-
-        if (currentView == null)
-        {
-            currentView = LayoutInflater.from(getContext())
-                    .inflate(mLayoutID, parent, false);
-        }
-
-        Product currentProduct = mProducts.get(position);
-
-        ImageView imageView = currentView.findViewById(R.id.category_img_view);
-        int i = mContext.getResources().getIdentifier(currentProduct.getImageAddress(),
+    public void onBindViewHolder(@NonNull ProductAdaptor.ProductViewHolder holder, int position) {
+        holder.textView.setText(mProducts.get(position).getName());
+        int i = mContext.getResources().getIdentifier(mProducts.get(position).getImageAddress(),
                 "drawable", mContext.getPackageName());
-        imageView.setImageResource(i);
-
-        TextView textView = currentView.findViewById(R.id.category_text_view);
-        textView.setText(currentProduct.getName());
-
-        return currentView;
-
+        holder.imageView.setImageResource(i);
     }
-    public Product getItem(int position){
-        return mProducts.get(position);
+
+    @Override
+    public int getItemCount() {
+        return mProducts.size();
+    }
+
+    public static class ProductViewHolder extends RecyclerView.ViewHolder{
+        ImageView imageView;
+        TextView textView;
+        public ProductViewHolder(@NonNull View itemView, IProductView iProductView) {
+            super(itemView);
+            imageView = itemView.findViewById(R.id.category_img_view);
+            textView = itemView.findViewById(R.id.category_text_view);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if (iProductView != null) {
+                        int pos = getAdapterPosition();
+                        if (pos != RecyclerView.NO_POSITION) {
+                            iProductView.onItemClick(pos);
+                        }
+                    }
+                }
+            });
+        }
     }
 }

@@ -5,29 +5,29 @@ import static com.djliquor.app.providers.ProductProvider.generateData;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.SearchView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.navigation.ui.AppBarConfiguration;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import com.djliquor.app.intefaces.IProductView;
 import com.djliquor.app.R;
 import com.djliquor.app.adaptors.ProductAdaptor;
 import com.djliquor.app.databinding.ActivityListBinding;
-import com.djliquor.app.databinding.ActivityMainBinding;
-import com.djliquor.app.models.Category;
 import com.djliquor.app.models.Product;
 import com.djliquor.app.models.Type;
 
 import java.util.ArrayList;
 
-public class ListActivity extends AppCompatActivity {
+public class ListActivity extends AppCompatActivity implements IProductView {
 
     private ActivityListBinding binding;
     private Type category;
+
+    private ArrayList<Product> searchResults;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -113,7 +113,7 @@ public class ListActivity extends AppCompatActivity {
     }
 
     public void updateFilter(String query, Type category) {
-        ArrayList<Product> searchResults = generateData();
+        searchResults = generateData();
         if (query != "")
         {
             searchResults.removeIf(product -> !product.getName().toLowerCase().contains(query.toLowerCase()));
@@ -125,19 +125,19 @@ public class ListActivity extends AppCompatActivity {
         }
 
 
-        GridView recyclerView = this.findViewById(R.id.grid_view);
-        ProductAdaptor productAdaptor = new ProductAdaptor(this, R.layout.category_list_view_item,searchResults);
-        recyclerView.setAdapter(productAdaptor);
-        recyclerView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
-            @Override
-            public void onItemClick(AdapterView<?>adapter,View v, int position, long id){
-                Product item = productAdaptor.getItem(position);
+        RecyclerView productView = this.findViewById(R.id.product_view);
+        productView.setLayoutManager(new GridLayoutManager(this, 2));
 
-                Intent intent = new Intent(ListActivity.this, DetailActivity.class);
-                intent.putExtra("product", item);
-                startActivity(intent);
-            }
-        });
+        ProductAdaptor productAdaptor = new ProductAdaptor(this,searchResults, this);
+        productView.setAdapter(productAdaptor);
+    }
 
+    @Override
+    public void onItemClick(int position) {
+        Product item = searchResults.get(position);
+
+        Intent intent = new Intent(ListActivity.this, DetailActivity.class);
+        intent.putExtra("product", item);
+        startActivity(intent);
     }
 }

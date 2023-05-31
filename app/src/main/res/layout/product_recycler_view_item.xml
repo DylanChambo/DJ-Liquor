@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="?attr/colorContainer"
+        android:paddingHorizontal="24dp">
+        <ImageView
+            android:id="@+id/category_img_view"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:src="@drawable/icon_wine"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/category_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="WINE"
+            android:textSize="16sp"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

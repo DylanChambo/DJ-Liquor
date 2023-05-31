@@ -39,7 +39,7 @@
         android:numColumns="2"
         android:verticalSpacing="12dp"
         android:layout_gravity="bottom"
-        tools:listitem="@layout/category_list_view_item">
+        tools:listitem="@layout/category_grid_view_item">
 
     </GridView>
 </LinearLayout>

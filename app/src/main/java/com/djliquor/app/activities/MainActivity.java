@@ -15,6 +15,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 import android.widget.SearchView;
 
 import android.view.View;
@@ -38,19 +39,28 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+
+
         List<Category> categories = CategoryProvider.getCategories();
         CategoryAdaptor categoryAdapter = new CategoryAdaptor(this, R.layout.category_list_view_item, categories);
 
         GridView categoryView = (GridView) this.findViewById(R.id.categoryView);
         categoryView.setAdapter(categoryAdapter);
 
+        ImageView backButton = (ImageView) this.findViewById(R.id.back_button);
+        backButton.setVisibility(View.INVISIBLE);
+
         SearchView searchView = (SearchView) this.findViewById(R.id.search_view);
 
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
-                Intent i = new Intent(MainActivity.this, ListActivity.class);
-                startActivity(i);
+
+                Intent intent = new Intent(MainActivity.this, ListActivity.class);
+                intent.putExtra("search", query);
+                startActivity(intent);
+                searchView.setQuery("", false);
+                searchView.setIconified(true);
                 return false;
             }
 

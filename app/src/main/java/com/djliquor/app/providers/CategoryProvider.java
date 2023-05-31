@@ -6,7 +6,6 @@ import com.djliquor.app.models.Type;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
-import java.util.Map;
 
 public class CategoryProvider {
     private static List<String> categories = new ArrayList<String>() {

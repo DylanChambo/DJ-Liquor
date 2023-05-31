@@ -129,8 +129,21 @@ public class ListActivity extends AppCompatActivity implements IProductView {
             searchResults.removeIf(product -> !(product.getCategory() == category));
         }
 
-
+        TextView noResults = this.findViewById(R.id.no_results);
         RecyclerView productView = this.findViewById(R.id.product_view);
+
+        if (searchResults.size() == 0)
+        {
+            productView.setVisibility(View.INVISIBLE);
+            noResults.setVisibility(View.VISIBLE);
+        } else
+        {
+            productView.setVisibility(View.VISIBLE);
+            noResults.setVisibility(View.INVISIBLE);
+        }
+
+
+
         productView.setLayoutManager(new GridLayoutManager(this, 2));
 
         ProductAdaptor productAdaptor = new ProductAdaptor(this,searchResults, R.layout.product_recycler_view_item, this);

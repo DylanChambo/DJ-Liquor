@@ -3,4 +3,5 @@
     <string name="yes">YES</string>
     <string name="no">NO</string>
     <string name="tooltipText">Search e.g vodka</string>
+    <string name="noResults">NO RESULTS</string>
 </resources>

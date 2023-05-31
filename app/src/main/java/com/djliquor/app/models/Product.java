@@ -1,7 +1,4 @@
 package com.djliquor.app.models;
-import android.os.Parcelable;
-
-import com.djliquor.app.models.Type;
 
 import java.io.Serializable;
 

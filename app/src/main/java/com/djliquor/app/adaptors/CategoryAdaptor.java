@@ -13,7 +13,6 @@ import androidx.annotation.Nullable;
 
 import com.djliquor.app.R;
 import com.djliquor.app.models.Category;
-import com.djliquor.app.models.Product;
 
 import java.util.List;
 

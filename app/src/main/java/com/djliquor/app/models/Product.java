@@ -1,9 +1,11 @@
 package com.djliquor.app.models;
+import android.os.Parcelable;
+
 import com.djliquor.app.models.Type;
 
 import java.io.Serializable;
 
-public class Product {
+public class Product implements Serializable {
 
     private int idNumber;
     private float abv;

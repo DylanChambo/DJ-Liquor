@@ -5,17 +5,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".activities.DetailActivity">
-    <androidx.appcompat.widget.SearchView
+    <include layout="@layout/toolbar"/>
+
+    <ImageView
+        android:id="@+id/image_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:id="@+id/image_view"
-            android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:src="@drawable/corona"
-            android:background="?attr/colorContainer"
-            />
-    </androidx.appcompat.widget.SearchView>
+        android:layout_height="400dp"
+        android:src="@drawable/corona"
+        android:background="?attr/colorContainer"/>
+
     <TextView
         android:id="@+id/name_text_view"
         android:layout_width="match_parent"

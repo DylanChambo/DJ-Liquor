@@ -1,8 +1,12 @@
 package com.djliquor.app.activities;
 
+import static com.djliquor.app.providers.ProductProvider.generateData;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.SearchView;
 import android.widget.TextView;
@@ -11,8 +15,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.ui.AppBarConfiguration;
 
 import com.djliquor.app.R;
+import com.djliquor.app.adaptors.ProductAdaptor;
 import com.djliquor.app.databinding.ActivityListBinding;
 import com.djliquor.app.databinding.ActivityMainBinding;
+import com.djliquor.app.models.Product;
+
+import java.util.ArrayList;
 
 public class ListActivity extends AppCompatActivity {
 
@@ -31,6 +39,8 @@ public class ListActivity extends AppCompatActivity {
 
         tv.setText("RESULTS FOR `" + search.toUpperCase() + "`");
         searchView.setQuery(search, false);
+
+        performSearch(search);
 
         searchView.setOnSearchClickListener(new View.OnClickListener() {
             @Override
@@ -52,6 +62,7 @@ public class ListActivity extends AppCompatActivity {
             @Override
             public boolean onQueryTextSubmit(String query) {
                 tv.setText("RESULTS FOR `" + query.toUpperCase() + "`");
+                performSearch(query);
                 return false;
             }
 
@@ -60,6 +71,7 @@ public class ListActivity extends AppCompatActivity {
                 return false;
             }
         });
+
         setBackButtonTraverse(backButton);
     }
 
@@ -82,5 +94,31 @@ public class ListActivity extends AppCompatActivity {
                 finish();
             }
         });
+    }
+
+    public void performSearch(String query) {
+        ArrayList<Product> searchResults = new ArrayList();
+        ArrayList<Product> data = generateData();
+
+        for (int i = 0; i < 5; i++) {
+            if (data.get(i).getName().toLowerCase().contains(query.toLowerCase())) {
+                searchResults.add(data.get(i));
+            }
+        }
+
+        GridView recyclerView = this.findViewById(R.id.grid_view);
+        ProductAdaptor productAdaptor = new ProductAdaptor(this, R.layout.category_list_view_item,searchResults);
+        recyclerView.setAdapter(productAdaptor);
+        recyclerView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+            @Override
+            public void onItemClick(AdapterView<?>adapter,View v, int position, long id){
+                Product item = productAdaptor.getItem(position);
+
+                Intent intent = new Intent(ListActivity.this, DetailActivity.class);
+                intent.putExtra("product", item);
+                startActivity(intent);
+            }
+        });
+
     }
 }

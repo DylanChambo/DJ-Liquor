@@ -1,6 +1,7 @@
 package com.djliquor.app.providers;
 
 import com.djliquor.app.models.Category;
+import com.djliquor.app.models.Type;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,12 +21,13 @@ public class CategoryProvider {
     };
 
     public static List<Category> getCategories() {
+        Type[] values = Type.values();
         List<Category> categoryList = new ArrayList<Category>();
-        for (String category: categories)
+        for (int i = 0; i < categories.size(); i++)
         {
-            String name = category.toUpperCase(Locale.ROOT);
-            String fileName = "icon_" + category;
-            categoryList.add(new Category(name, fileName));
+            String name = categories.get(i).toUpperCase(Locale.ROOT);
+            String fileName = "icon_" + categories.get(i);
+            categoryList.add(new Category(name, fileName, values[i+1]));
         }
         return categoryList;
     }

@@ -58,9 +58,9 @@ public class MainActivity extends AppCompatActivity {
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
-                Toast.makeText(MainActivity.this, query, Toast.LENGTH_SHORT).show();
                 Bundle params = new Bundle();
                 params.putString("search", query);
+                navController.navigateUp();
                 navController.navigate(R.id.To_SearchFragment, params);
                 return false;
             }

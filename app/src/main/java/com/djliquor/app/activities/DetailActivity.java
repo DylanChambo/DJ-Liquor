@@ -37,6 +37,11 @@ public class DetailActivity extends AppCompatActivity {
 
         int i = getResources().getIdentifier(product.getImageAddress(),
                 "drawable", getPackageName());
+        if (i == 0)
+        {
+            i = getResources().getIdentifier("baseline_image_24",
+                    "drawable", getPackageName());
+        }
         imageView.setImageResource(i);
 
         nameTextView.setText(product.getName());

@@ -148,7 +148,14 @@ public class MainActivity extends AppCompatActivity implements IProductView {
 
     public static void updatePopularProducts(Product product)
     {
-        if (!popularProducts.contains(product)) {
+        boolean included = false;
+        for (int i = 0; i < popularProducts.size(); i++)
+        {
+            if (popularProducts.get(i).getIdNumber() == product.getIdNumber()) {
+                included = true;
+            }
+        }
+            if (!included) {
             for (int i = popularProducts.size() - 1; i >= 1; i--) {
                 popularProducts.set(i, popularProducts.get(i - 1));
             }

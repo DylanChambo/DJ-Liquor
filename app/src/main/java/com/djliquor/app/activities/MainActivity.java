@@ -15,6 +15,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.SearchView;
 
@@ -26,6 +27,7 @@ import com.djliquor.app.R;
 import com.djliquor.app.adaptors.CategoryAdaptor;
 import com.djliquor.app.databinding.ActivityMainBinding;
 import com.djliquor.app.models.Category;
+import com.djliquor.app.models.Product;
 import com.djliquor.app.providers.CategoryProvider;
 
 import java.util.List;
@@ -71,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
@@ -86,6 +89,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onQueryTextChange(String newText) {
                 return false;
+            }
+        });
+
+        categoryView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+            @Override
+            public void onItemClick(AdapterView<?>adapter,View v, int position, long id){
+                Category category = categoryAdapter.getItem(position);
+
+                Intent intent = new Intent(MainActivity.this, ListActivity.class);
+                intent.putExtra("category", category.getType());
+                startActivity(intent);
             }
         });
 

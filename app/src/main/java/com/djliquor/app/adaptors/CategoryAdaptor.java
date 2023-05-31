@@ -13,6 +13,7 @@ import androidx.annotation.Nullable;
 
 import com.djliquor.app.R;
 import com.djliquor.app.models.Category;
+import com.djliquor.app.models.Product;
 
 import java.util.List;
 
@@ -52,5 +53,9 @@ public class CategoryAdaptor extends ArrayAdapter {
         textView.setText(currentCategory.getCategoryName());
 
         return currentListViewItem;
+    }
+
+    public Category getItem(int position){
+        return mCatagories.get(position);
     }
 }

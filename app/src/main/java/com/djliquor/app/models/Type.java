@@ -6,8 +6,7 @@ public enum Type {
     BEER,
     WINE,
     CIDER,
-    SPIRIT,
+    SPIRITS,
+    RTD,
     LIQUEUR,
-    RTD
-
 }

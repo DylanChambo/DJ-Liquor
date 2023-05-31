@@ -18,13 +18,16 @@ import com.djliquor.app.R;
 import com.djliquor.app.adaptors.ProductAdaptor;
 import com.djliquor.app.databinding.ActivityListBinding;
 import com.djliquor.app.databinding.ActivityMainBinding;
+import com.djliquor.app.models.Category;
 import com.djliquor.app.models.Product;
+import com.djliquor.app.models.Type;
 
 import java.util.ArrayList;
 
 public class ListActivity extends AppCompatActivity {
 
     private ActivityListBinding binding;
+    private Type category;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,16 +39,29 @@ public class ListActivity extends AppCompatActivity {
         ImageView backButton = (ImageView) this.findViewById(R.id.back_button);
 
         String search = getIntent().getExtras().getString("search");
+        if (search == null) {
+            search = "";
+        } else {
+            tv.setText("RESULTS FOR `" + search.toUpperCase() + "`");
+        }
 
-        tv.setText("RESULTS FOR `" + search.toUpperCase() + "`");
+        category = getIntent().getSerializableExtra("category", Type.class);
+        if (category == null) {
+            category = Type.None;
+        } else {
+            tv.setText("ALL " + category);
+        }
+
+
         searchView.setQuery(search, false);
 
-        performSearch(search);
+        updateFilter(search, category);
 
+        String finalSearch = search;
         searchView.setOnSearchClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                searchView.setQuery(search, false);
+                searchView.setQuery(finalSearch, false);
                 setBackButtonSearch(backButton, searchView);
             }
         });
@@ -62,7 +78,7 @@ public class ListActivity extends AppCompatActivity {
             @Override
             public boolean onQueryTextSubmit(String query) {
                 tv.setText("RESULTS FOR `" + query.toUpperCase() + "`");
-                performSearch(query);
+                updateFilter(query, category);
                 return false;
             }
 
@@ -96,15 +112,18 @@ public class ListActivity extends AppCompatActivity {
         });
     }
 
-    public void performSearch(String query) {
-        ArrayList<Product> searchResults = new ArrayList();
-        ArrayList<Product> data = generateData();
-
-        for (int i = 0; i < 5; i++) {
-            if (data.get(i).getName().toLowerCase().contains(query.toLowerCase())) {
-                searchResults.add(data.get(i));
-            }
+    public void updateFilter(String query, Type category) {
+        ArrayList<Product> searchResults = generateData();
+        if (query != "")
+        {
+            searchResults.removeIf(product -> !product.getName().contains(query));
         }
+
+        if (category != Type.None)
+        {
+            searchResults.removeIf(product -> !(product.getCategory() == category));
+        }
+
 
         GridView recyclerView = this.findViewById(R.id.grid_view);
         ProductAdaptor productAdaptor = new ProductAdaptor(this, R.layout.category_list_view_item,searchResults);

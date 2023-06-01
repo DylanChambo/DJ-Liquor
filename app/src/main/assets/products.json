@@ -245,7 +245,7 @@
     "abv": 12.00,
     "cost": 12.99,
     "imageName": "boysencider",
-    "description": "Old Mout Boysencider: A tantalizing blend of juicy boysenberries and crisp cider. Indulge in the vibrant sweetness and refreshing tang of this irresistible cider fusion. Perfect for those who crave a unique and fruity cider experience."
+    "description": "\nOld Mout Boysencider: A tantalizing blend of juicy boysenberries and crisp cider. Indulge in the vibrant sweetness and refreshing tang of this irresistible cider fusion. Perfect for those who crave a unique and fruity cider experience."
   },
   {
     "name": "Somersby Apple Cider",
@@ -253,7 +253,7 @@
     "abv": 12.00,
     "cost": 12.99,
     "imageName": "somersby_apple",
-    "description": "Old Mout Boysencider: A tantalizing blend of juicy boysenberries and crisp cider. Indulge in the vibrant sweetness and refreshing tang of this irresistible cider fusion. Perfect for those who crave a unique and fruity cider experience."
+    "description": "\nSomersby Apple Cider: Crisp, refreshing, and bursting with the natural sweetness of juicy apples. Experience the perfect balance of fruity goodness and a refreshing bite in every sip. Raise your glass and savor the pure joy of Somersby Apple Cider."
   },
   {
     "name": "Old Mout Feijoa & Cider",
@@ -261,7 +261,7 @@
     "abv": 12.00,
     "cost": 12.99,
     "imageName": "feijoa_cider",
-    "description": "Old Mout Boysencider: A tantalizing blend of juicy boysenberries and crisp cider. Indulge in the vibrant sweetness and refreshing tang of this irresistible cider fusion. Perfect for those who crave a unique and fruity cider experience."
+    "description": "\nOld Mout Feijoa & Cider: A tantalizing fusion of exotic feijoas and crisp cider. Discover the captivating sweetness and unique tropical flavor that sets this cider apart. Indulge in the irresistible combination of feijoa's distinctive tang and refreshing cider. Experience a taste journey like no other with Old Mout Feijoa & Cider."
   },
   {
     "name": "Zeffer Apple Crumble Cider",
@@ -269,7 +269,7 @@
     "abv": 12.00,
     "cost": 12.99,
     "imageName": "apple_crumble",
-    "description": "Old Mout Boysencider: A tantalizing blend of juicy boysenberries and crisp cider. Indulge in the vibrant sweetness and refreshing tang of this irresistible cider fusion. Perfect for those who crave a unique and fruity cider experience."
+    "description": "\nZeffer Apple Crumble Cider: Indulge in the taste of freshly baked apple crumble in a glass. This unique cider combines the rich flavors of baked apples, cinnamon, and a hint of buttery crumble topping. Savor the comforting sweetness and delightful spiced notes that make Zeffer Apple Crumble Cider a truly irresistible treat. Experience the warmth and nostalgia of apple crumble with every sip."
   },
   {
     "name": "Old Mout Cider Pear Scrumpy",
@@ -277,7 +277,7 @@
     "abv": 12.00,
     "cost": 12.99,
     "imageName": "pear_scrumpy",
-    "description": "Old Mout Boysencider: A tantalizing blend of juicy boysenberries and crisp cider. Indulge in the vibrant sweetness and refreshing tang of this irresistible cider fusion. Perfect for those who crave a unique and fruity cider experience."
+    "description": "\nOld Mout Pear Scrumpy: Embrace the bold and rustic charm of our Pear Scrumpy cider. Crafted with hand-picked pears, it delivers a tangy and full-bodied taste that is both refreshingly crisp and delightfully smooth. With a hint of sweetness and a hint of tartness, this cider is a perfect companion for those seeking a unique and adventurous cider experience. Raise your glass to the intriguing flavors of Old Mout Pear Scrumpy."
   },
   {
     "name": "Old Mout Scrumpy Berry Cider",
@@ -285,7 +285,7 @@
     "abv": 12.00,
     "cost": 12.99,
     "imageName": "berry_cider",
-    "description": "Old Mout Boysencider: A tantalizing blend of juicy boysenberries and crisp cider. Indulge in the vibrant sweetness and refreshing tang of this irresistible cider fusion. Perfect for those who crave a unique and fruity cider experience."
+    "description": "\nOld Mout Scrumpy Berry Cider: A captivating blend of traditional scrumpy cider and luscious mixed berries. Experience the irresistible combination of bold, tangy apples and juicy berries, creating a tantalizing balance of sweetness and tartness. Let the fruity explosion of flavors transport your taste buds on a delightful journey. Raise a glass and savor the unique twist of Old Mout Scrumpy Berry Cider."
   },
   {
     "name": "Somersby Pear Cider",
@@ -293,7 +293,7 @@
     "abv": 12.00,
     "cost": 12.99,
     "imageName": "somersby_pear",
-    "description": "Old Mout Boysencider: A tantalizing blend of juicy boysenberries and crisp cider. Indulge in the vibrant sweetness and refreshing tang of this irresistible cider fusion. Perfect for those who crave a unique and fruity cider experience."
+    "description": "\nSomersby Pear Cider: Crisp, juicy, and bursting with the natural sweetness of ripe pears. Indulge in the refreshing taste of Somersby Pear Cider, where the delicate flavors of succulent pears take center stage. With its smooth and balanced profile, this cider is the perfect companion for moments of pure enjoyment. Raise your glass and experience the pure delight of Somersby Pear Cider."
   },
   {
     "name": "Old Mout Scrumpy Tropical Cider",
@@ -301,7 +301,7 @@
     "abv": 12.00,
     "cost": 12.99,
     "imageName": "tropical",
-    "description": "Old Mout Boysencider: A tantalizing blend of juicy boysenberries and crisp cider. Indulge in the vibrant sweetness and refreshing tang of this irresistible cider fusion. Perfect for those who crave a unique and fruity cider experience."
+    "description": "\nOld Mout Scrumpy Tropical Cider: Embark on a tropical adventure with the vibrant flavors of our Scrumpy Tropical Cider. This unique blend combines the richness of traditional scrumpy cider with exotic tropical fruits, creating a tantalizing taste sensation. Let the zesty pineapple, mango, and passionfruit transport you to sun-drenched shores with every sip. Embrace the bold and refreshing flavors of Old Mout Scrumpy Tropical Cider and enjoy a taste of paradise."
   },
   {
     "name": "Zeffer Rose with Berry Infusion Cider",
@@ -309,7 +309,7 @@
     "abv": 12.00,
     "cost": 12.99,
     "imageName": "rose",
-    "description": "Old Mout Boysencider: A tantalizing blend of juicy boysenberries and crisp cider. Indulge in the vibrant sweetness and refreshing tang of this irresistible cider fusion. Perfect for those who crave a unique and fruity cider experience."
+    "description": "\nZeffer Rosé with Berry Infusion Cider: Experience a delightful fusion of elegance and fruity indulgence with our Rosé with Berry Infusion Cider. Crafted with precision, this cider blends the refreshing crispness of apples with a delicate touch of rosé wine and a burst of mixed berries. Savor the harmonious balance of flavors, where the subtle sweetness of the cider meets the vibrant notes of summer berries. Raise your glass and celebrate the perfect union of cider and rosé in Zeffer Rosé with Berry Infusion Cider."
   },
   {
     "name": "Somersby Passionfruit & Orange Cider",
@@ -317,6 +317,6 @@
     "abv": 12.00,
     "cost": 12.99,
     "imageName": "somersby_passion",
-    "description": "Old Mout Boysencider: A tantalizing blend of juicy boysenberries and crisp cider. Indulge in the vibrant sweetness and refreshing tang of this irresistible cider fusion. Perfect for those who crave a unique and fruity cider experience."
+    "description": "\nSomersby Passionfruit & Orange Cider: Dive into a tropical paradise with our Passionfruit & Orange Cider. This tantalizing blend combines the tangy zest of ripe oranges with the exotic sweetness of passionfruit, resulting in a refreshing and vibrant cider experience. Indulge in the lively and invigorating flavors that will transport you to sun-soaked beaches and warm summer days. Raise your glass and enjoy the delightful fusion of Somersby Passionfruit & Orange Cider."
   }
 ]

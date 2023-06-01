@@ -318,5 +318,84 @@
     "cost": 12.99,
     "imageName": "somersby_passion",
     "description": "\nSomersby Passionfruit & Orange Cider: Dive into a tropical paradise with our Passionfruit & Orange Cider. This tantalizing blend combines the tangy zest of ripe oranges with the exotic sweetness of passionfruit, resulting in a refreshing and vibrant cider experience. Indulge in the lively and invigorating flavors that will transport you to sun-soaked beaches and warm summer days. Raise your glass and enjoy the delightful fusion of Somersby Passionfruit & Orange Cider."
+  },
+  {
+    "name": "Long White Vodka Raspberry",
+    "category": 5,
+    "abv": 4.8,
+    "cost": 3.20,
+    "imageName": "long_white_rasp",
+    "description": "Triple distilled vodka with naturally flavoured NZ sparkling water. It's light and refreshing and set to become your new best friend this summer!"
+  },
+  {
+    "name": "Long White Vodka Passionfruit",
+    "category": 5,
+    "abv": 4.8,
+    "cost": 3.20,
+    "imageName": "long_white_passion",
+    "description": "Triple distilled vodka with naturally flavoured NZ sparkling water. It's light and refreshing and set to become your new best friend this summer!"
+  },
+  {
+    "name": "Vodka Cruiser Wild Raspberry",
+    "category": 5,
+    "abv": 4.8,
+    "cost": 3.20,
+    "imageName": "cruiser_rasp",
+    "description": "A bright, summery pre mixed raspberry and vodka drink."
+  },
+  {
+    "name": "Woodstock Bourbon And Cola",
+    "category": 5,
+    "abv": 4.8,
+    "cost": 3.20,
+    "imageName": "woodstock_bourbon_cola",
+    "description": "Woodstock Bourbon Cola 5% 10 Pack Can 330ml"},
+  {
+    "name": "Pals Vodka, Watermelon, Mint & Soda",
+    "category": 5,
+    "abv": 5.0,
+    "cost": 2.20,
+    "imageName": "pals_watermelon",
+    "description": "Pals. The only thing that beats them is pals, with Pals. Unless of course you don't actually have any pals. In which case, have these Pals, with your imaginary pal, Lance. Or maybe you do have pals and just aren't good at sharing. And that's fair enough. Pals are very tasty.\n\nWith less than 1.1g sugar per 100mls and all natural flavours/extracts, Pals are a great option for any social occasion. Pals are also gluten free and vegan friendly. \n\nThis refreshing option is a beautiful blend of premium vodka, watermelon, mint and soda water. Clean, fresh and simple."
+  },
+  {
+    "name": "Baileys Irish Cream",
+    "category": 6,
+    "abv": 17.0,
+    "cost": 52.99,
+    "imageName": "baileys",
+    "description": "Baileys Irish Cream is an Irish cream liqueur, an alcoholic drink flavoured with cream, cocoa and Irish whiskey. It is made by Diageo at Nangor Road, in Dublin, Ireland and in Mallusk, Northern Ireland."
+  },
+  {
+    "name": "Frangelico",
+    "category": 6,
+    "abv": 20.0,
+    "cost": 69.99,
+    "imageName": "frangelico",
+    "description": "Frangelico obtains sweet flavour sought after by Tonda Gentile hazelnuts grown in the Langhe. Its clear pale gold color marries with intense hazelnut aromas and rich texture, hints of vanilla and dark chocolate. Drink it in winter and summer to warm you up or cool you down, and it is also perfect for easy mixes with sodas, orange juice, coke or ginger ale."
+  },
+  {
+    "name": "Kahlua",
+    "category": 6,
+    "abv": 20.0,
+    "cost": 42.99,
+    "imageName": "kahlua",
+    "description": "World's number one selling coffee liqueur. Kahlua stands for a rich heritage, full of diversity and colour, something truly unique. Deep brown in colour with enticing scents of bittersweet coffee bean and roasted chestnut and multi layered flavours of black coffee and sweet butter."
+  },
+  {
+    "name": "Malibu",
+    "category": 6,
+    "abv": 21.0,
+    "cost": 2.20,
+    "imageName": "malibu",
+    "description": "World's best selling Caribbean Rum with natural coconut flavour. The taste of Malibu is sunshine in a bottle - smooth, fresh coconut flavour with a sweet finish - perfect for brining the sun - kissed island to anytime."
+  },
+  {
+    "name": "Midori",
+    "category": 6,
+    "abv": 20.0,
+    "cost": 51.99,
+    "imageName": "midori",
+    "description": "Noticed first for its great colour - Midori means green in Japanese - this melon-flavoured liqueur owes its global appeal to its premium quality and fun musk melon flavour that can be enjoyed with juices, spirits and other liqueurs"
   }
 ]

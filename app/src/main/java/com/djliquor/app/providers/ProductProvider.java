@@ -39,7 +39,8 @@ public class ProductProvider {
                         obj.getString("description"),
                         types[obj.getInt("category")],
                         obj.getString("imageName"),
-                        obj.getString("name"));
+                        obj.getString("name"),
+                        obj.getInt("numImages"));
                 drinks.add(newDrink);
             }
         } catch (IOException e)

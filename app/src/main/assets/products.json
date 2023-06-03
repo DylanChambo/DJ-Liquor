@@ -365,7 +365,7 @@
     "abv": 4.8,
     "cost": 3.20,
     "imageName": "long_white_rasp",
-    "numImages": 1,
+    "numImages": 2,
     "description": "Triple distilled vodka with naturally flavoured NZ sparkling water. It's light and refreshing and set to become your new best friend this summer!"
   },
   {
@@ -374,7 +374,7 @@
     "abv": 4.8,
     "cost": 3.20,
     "imageName": "long_white_passion",
-    "numImages": 1,
+    "numImages": 2,
     "description": "Triple distilled vodka with naturally flavoured NZ sparkling water. It's light and refreshing and set to become your new best friend this summer!"
   },
   {
@@ -392,7 +392,7 @@
     "abv": 4.8,
     "cost": 3.20,
     "imageName": "woodstock_bourbon_cola",
-    "numImages": 1,
+    "numImages": 3,
     "description": "Woodstock Bourbon Cola 5% 10 Pack Can 330ml"},
   {
     "name": "Pals Vodka, Watermelon, Mint & Soda",
@@ -400,7 +400,7 @@
     "abv": 5.0,
     "cost": 2.20,
     "imageName": "pals_watermelon",
-    "numImages": 1,
+    "numImages": 2,
     "description": "Pals. The only thing that beats them is pals, with Pals. Unless of course you don't actually have any pals. In which case, have these Pals, with your imaginary pal, Lance. Or maybe you do have pals and just aren't good at sharing. And that's fair enough. Pals are very tasty.\n\nWith less than 1.1g sugar per 100mls and all natural flavours/extracts, Pals are a great option for any social occasion. Pals are also gluten free and vegan friendly. \n\nThis refreshing option is a beautiful blend of premium vodka, watermelon, mint and soda water. Clean, fresh and simple."
   },
   {
@@ -462,8 +462,8 @@
     "category": 5,
     "abv": 4.8,
     "cost": 2.29,
-    "imageName": "liase_guava",
-    "numImages": 1,
+    "imageName": "liaise_guava",
+    "numImages": 2,
     "description": "Liaise Vodka Guava Lime: Immerse yourself in the vibrant flavors of our Guava Lime Vodka. Crafted with the finest vodka, this tropical delight combines the luscious sweetness of guava with a tangy splash of lime. The result is a refreshing and balanced vodka infused with the exotic essence of guava and the bright zest of lime. Enjoy this tropical escape in a bottle, whether sipped on its own, mixed into cocktails, or enjoyed with your favorite mixers. Raise your glass and savor the captivating taste of Liaise Vodka Guava Lime."
   },
   {
@@ -472,7 +472,7 @@
     "abv": 7.0,
     "cost": 2.20,
     "imageName": "cruiser_passion",
-    "numImages": 1,
+    "numImages": 2,
     "description": "Vodka Cruiser Passionfruit: Experience a burst of tropical paradise with our Passionfruit Vodka Cruiser. This vibrant and refreshing vodka is infused with the luscious flavors of sun-ripened passionfruit, creating a delightful blend of sweetness and tang. Sip and savor the tropical essence as it dances on your palate, transporting you to sandy beaches and balmy evenings. Enjoy Vodka Cruiser Passionfruit straight, over ice, or mix it into your favorite cocktails for a taste of pure indulgence. Raise your glass and let the tropical vibes take over with Vodka Cruiser Passionfruit."
   },
   {

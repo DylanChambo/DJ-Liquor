@@ -13,7 +13,7 @@ public class Product implements Serializable {
     private String name;
 
     private int numImages;
-    public Product(int idNumber, float abv, float cost, String description, Type category, String imageAddress, String name) {
+    public Product(int idNumber, float abv, float cost, String description, Type category, String imageAddress, String name, int numImages) {
         this.idNumber = idNumber;
         this.abv = abv;
         this.cost = cost;
@@ -21,7 +21,7 @@ public class Product implements Serializable {
         this.category = category;
         this.imageAddress = imageAddress;
         this.name = name;
-        this.numImages = 3;
+        this.numImages = numImages;
     }
 
     public int getIdNumber() {

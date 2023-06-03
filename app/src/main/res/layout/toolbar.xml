@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.appbar.AppBarLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fitsSystemWindows="false">
     <Toolbar
         android:id="@+id/toolbar"
@@ -46,15 +46,15 @@
             </LinearLayout>
 
 
-            <SearchView
+            <androidx.appcompat.widget.SearchView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/search_view"
                 android:layout_centerVertical="true"
                 android:layout_alignParentEnd="true"
-                android:queryBackground="?attr/queryBackground"
-                android:searchIcon="@drawable/baseline_search_24"
-                android:queryHint="@string/tooltipText"/>
+                app:queryBackground="@drawable/rounded_search"
+                app:searchIcon="@drawable/baseline_search_24"
+                app:queryHint="@string/tooltipText" />
         </RelativeLayout>
     </Toolbar>
 </com.google.android.material.appbar.AppBarLayout>

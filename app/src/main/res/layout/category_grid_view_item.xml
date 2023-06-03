@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
-    android:layout_margin="5dp"
+    android:layout_margin="16dp"
     app:cardCornerRadius="5dp"
     app:cardElevation="5dp">
     <LinearLayout
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:background="?attr/colorContainer"
-        android:paddingHorizontal="24dp">
+        android:paddingHorizontal="6dp">
         <ImageView
             android:id="@+id/category_img_view"
             android:layout_width="112dp"
@@ -26,7 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="WINE"
-            android:textSize="24sp"
+            android:textSize="20sp"
             android:textAlignment="center"/>
     </LinearLayout>
 

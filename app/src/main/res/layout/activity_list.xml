@@ -14,7 +14,7 @@
         android:text="RESULTS FOR `BEER`"
         android:gravity="center"
         android:textSize="24dp"
-        android:padding="10dp"/>
+        android:padding="8dp"/>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -32,9 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginHorizontal="8dp"
-            android:horizontalSpacing="12dp"
             android:numColumns="2"
-            android:verticalSpacing="12dp"
             android:layout_gravity="bottom"
             tools:listitem="@layout/category_grid_view_item">
 

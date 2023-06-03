@@ -60,8 +60,8 @@ public class ProductAdaptor extends RecyclerView.Adapter<ProductAdaptor.ProductV
         TextView textView;
         public ProductViewHolder(@NonNull View itemView, IProductView iProductView) {
             super(itemView);
-            imageView = itemView.findViewById(R.id.category_img_view);
-            textView = itemView.findViewById(R.id.category_text_view);
+            imageView = itemView.findViewById(R.id.product_img_view);
+            textView = itemView.findViewById(R.id.product_text_view);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

@@ -492,5 +492,51 @@
     "imageName": "pals_vodka",
     "numImages": 1,
     "description": "Pals Vodka Lime and Soda: Experience the ultimate refreshment with our Vodka Lime and Soda. Crafted with premium vodka, this invigorating cocktail combines the zesty brightness of lime with the crispness of soda water. Sip and savor the lively and tangy flavors that dance on your palate, creating a perfect balance of citrus and refreshment. Enjoy the convenience of this ready-to-drink (RTD) cocktail, best served chilled and straight from the can. Raise your can and revel in the crisp and vibrant taste of Pals Vodka Lime and Soda, the ideal choice for casual get-togethers or moments of relaxation."
-  }
+  },
+  {
+    "name": "Aperol",
+    "category": 6,
+    "abv": 21.0,
+    "cost": 40.00,
+    "imageName": "aperol",
+    "numImages": 2,
+    "description": "Aperol: Embrace the vibrant spirit of Italy with Aperol, the iconic aperitif. With its bright orange hue and unique flavor profile, Aperol is a true classic. Delight in the perfect balance of bitter and sweet notes, accompanied by subtle hints of orange and herbs. Whether enjoyed as a refreshing Aperol Spritz or in your own creative cocktails, Aperol is the perfect companion for social gatherings and moments of relaxation. Raise your glass and let Aperol transport you to the sun-soaked streets of Italy, where every sip is a celebration of life's pleasures."
+  },
+  {
+    "name": "Pimms No 1",
+    "category": 6,
+    "abv": 21.0,
+    "cost": 40.00,
+    "imageName": "pimms",
+    "numImages": 1,
+    "description": "Pimm's: Step into the world of British summer traditions with Pimm's, the beloved fruity liqueur. A true symbol of summertime, Pimm's is a captivating blend of gin, fruit extracts, and a secret blend of herbs. With its refreshing and light-bodied character, Pimm's is best enjoyed mixed with lemonade and an assortment of fresh fruits, cucumber, and mint. Indulge in the crisp and fruity flavors that evoke the essence of garden parties and lazy afternoons. Embrace the quintessential taste of summer with a glass of Pimm's in hand, and let the good times roll."
+  },
+  {
+    "name": "Jagermeister",
+    "category": 6,
+    "abv": 21.0,
+    "cost": 40.00,
+    "imageName": "jagermeister",
+    "numImages": 1,
+    "description": "Jägermeister: Enter the realm of legendary herbal liqueurs with Jägermeister, an iconic spirit that captivates the senses. Crafted from a secret blend of 56 botanicals, Jägermeister offers a complex and aromatic experience. Its distinctive blend of herbs, roots, and spices delivers a balanced bittersweet flavor with notes of citrus, licorice, and a hint of cooling mint. Whether enjoyed as a shot, mixed in cocktails, or sipped slowly over ice, Jägermeister invites you to embrace the bold and unique taste that has made it a global sensation. Raise your glass and join the ranks of those who appreciate the rich heritage and unparalleled character of Jägermeister."
+  },
+  {
+    "name": "Disaronno",
+    "category": 6,
+    "abv": 21.0,
+    "cost": 40.00,
+    "imageName": "disaronno",
+    "numImages": 1,
+    "description": "Disaronno: Unleash your senses and indulge in the unmistakable allure of Disaronno, the world's favorite Italian liqueur. With its rich amber color and velvety smooth texture, Disaronno exudes elegance and sophistication. The unmistakable aroma of almonds and vanilla greets your nose, leading to a luscious and harmonious taste on the palate. Savor the delicate balance of sweet amaretto flavors with a hint of marzipan, creating a truly captivating drinking experience. Enjoy Disaronno neat, on the rocks, or as a luxurious addition to your favorite cocktails. Raise your glass and immerse yourself in the timeless elegance of Disaronno."
+  },
+  {
+    "name": "Limoncello",
+    "category": 6,
+    "abv": 21.0,
+    "cost": 40.00,
+    "imageName": "limoncello",
+    "numImages": 1,
+    "description": "Limoncello: Experience the vibrant essence of Italy with Limoncello, a captivating lemon liqueur. Crafted from the zest of juicy lemons, Limoncello delivers a burst of refreshing citrus flavor that invigorates the senses. The bright yellow hue hints at the lively and tangy taste that awaits. Sip and savor the smooth and zesty notes, with just the right balance of sweetness and acidity. Whether enjoyed as a chilled digestif or as a delightful addition to cocktails, Limoncello transports you to the sun-drenched Amalfi Coast with every sip. Raise your glass and let the sunny spirit of Limoncello brighten your day."
+  },
+  
 ]

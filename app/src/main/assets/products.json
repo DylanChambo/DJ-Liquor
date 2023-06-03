@@ -436,6 +436,7 @@
     "abv": 21.0,
     "cost": 2.20,
     "imageName": "malibu",
+    "numImages": 1,
     "description": "World's best selling Caribbean Rum with natural coconut flavour. The taste of Malibu is sunshine in a bottle - smooth, fresh coconut flavour with a sweet finish - perfect for brining the sun - kissed island to anytime."
   },
   {
@@ -453,6 +454,7 @@
     "abv": 4.8,
     "cost": 5.20,
     "imageName": "collective_berry",
+    "numImages": 1,
     "description": "Clean Collective Wild Berry & Lime Vodka: Indulge in the vibrant fusion of wild berries and zesty lime with our premium vodka. Crafted with care, this refreshing blend brings together the natural sweetness of mixed berries and the tangy kick of lime for a truly invigorating taste. Enjoy the smoothness and purity of our vodka while savoring the delicious burst of flavors. Raise a glass to a clean and vibrant drinking experience with Clean Collective Wild Berry & Lime Vodka."
   },
   {
@@ -461,6 +463,7 @@
     "abv": 4.8,
     "cost": 2.29,
     "imageName": "liase_guava",
+    "numImages": 1,
     "description": "Liaise Vodka Guava Lime: Immerse yourself in the vibrant flavors of our Guava Lime Vodka. Crafted with the finest vodka, this tropical delight combines the luscious sweetness of guava with a tangy splash of lime. The result is a refreshing and balanced vodka infused with the exotic essence of guava and the bright zest of lime. Enjoy this tropical escape in a bottle, whether sipped on its own, mixed into cocktails, or enjoyed with your favorite mixers. Raise your glass and savor the captivating taste of Liaise Vodka Guava Lime."
   },
   {
@@ -469,6 +472,7 @@
     "abv": 7.0,
     "cost": 2.20,
     "imageName": "cruiser_passion",
+    "numImages": 1,
     "description": "Vodka Cruiser Passionfruit: Experience a burst of tropical paradise with our Passionfruit Vodka Cruiser. This vibrant and refreshing vodka is infused with the luscious flavors of sun-ripened passionfruit, creating a delightful blend of sweetness and tang. Sip and savor the tropical essence as it dances on your palate, transporting you to sandy beaches and balmy evenings. Enjoy Vodka Cruiser Passionfruit straight, over ice, or mix it into your favorite cocktails for a taste of pure indulgence. Raise your glass and let the tropical vibes take over with Vodka Cruiser Passionfruit."
   },
   {
@@ -477,6 +481,7 @@
     "abv": 6.2,
     "cost": 3.20,
     "imageName": "pals_whiskey",
+    "numImages": 1,
     "description": "Pals American Whiskey Apple and Soda: Discover the perfect harmony of American whiskey and crisp apple flavor in our Apple and Soda cocktail. Crafted with premium whiskey, this refreshing and lightly sparkling drink delivers a tantalizing blend of smooth whiskey notes and the refreshing taste of ripe apples. Enjoy the convenience of this ready-to-drink (RTD) cocktail, best served chilled and straight from the can. Raise your can and delight in the refreshing combination of Pals American Whiskey Apple and Soda, the perfect companion for casual gatherings or relaxed evenings."
   },
   {
@@ -485,6 +490,7 @@
     "abv": 4.8,
     "cost": 3.20,
     "imageName": "pals_vodka",
+    "numImages": 1,
     "description": "Pals Vodka Lime and Soda: Experience the ultimate refreshment with our Vodka Lime and Soda. Crafted with premium vodka, this invigorating cocktail combines the zesty brightness of lime with the crispness of soda water. Sip and savor the lively and tangy flavors that dance on your palate, creating a perfect balance of citrus and refreshment. Enjoy the convenience of this ready-to-drink (RTD) cocktail, best served chilled and straight from the can. Raise your can and revel in the crisp and vibrant taste of Pals Vodka Lime and Soda, the ideal choice for casual get-togethers or moments of relaxation."
   }
 ]

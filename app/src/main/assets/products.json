@@ -5,7 +5,7 @@
     "abv": 5.00,
     "cost": 1.49,
     "imageName": "tiger",
-    "numImages": 2,
+    "numImages": 3,
     "description": "Discover Tiger Beer: Unleash the Exotic Flavors! \n\nExperience the essence of Asia with Tiger Beer. Crafted with passion, our iconic lager combines premium ingredients for a fiercely refreshing taste. Join the roar and savor the authentic brew that embodies adventure and camaraderie. Embrace the untamed flavor today!"
   },
   {
@@ -23,7 +23,7 @@
     "abv": 5.00,
     "cost": 3.49,
     "imageName": "asahi",
-    "numImages": 2,
+    "numImages": 3,
     "description": "Experience the mastery of Japanese brewing with Asahi. Renowned for its exceptional quality and refined taste, Asahi is a lager that captures the essence of Japanese craftsmanship. Enjoy the smoothness and depth that sets Asahi apart, making it a go-to choice for beer enthusiasts worldwide. Elevate your beer-drinking experience with Asahi today!"
   },
   {
@@ -32,7 +32,7 @@
     "abv": 4.00,
     "cost": 1.49,
     "imageName": "lion_red",
-    "numImages": 2,
+    "numImages": 3,
     "description": "Get ready to unleash the boldness with Lion Red. This iconic beer is a true Kiwi legend, embodying the spirit of New Zealand's beer culture. With its distinctive red label and rich heritage, Lion Red delivers a full-bodied taste that satisfies even the most discerning palates. From the first sip to the last, immerse yourself in the unmistakable flavor of Lion Red and experience the true essence of New Zealand brewing. Raise your glass and join the legacy of Lion Red today!"
   },
   {
@@ -41,7 +41,7 @@
     "abv": 5.00,
     "cost": 2.99,
     "imageName": "heineken",
-    "numImages": 2,
+    "numImages": 3,
     "description": "Indulge in the unparalleled excellence of Heineken, the epitome of premium quality and global taste. With its distinctive green bottle and signature flavor, Heineken has become a symbol of sophistication and enjoyment around the world. Crafted with the finest ingredients and a centuries-old brewing tradition, every sip of Heineken is a testament to unparalleled craftsmanship. Immerse yourself in the crisp, refreshing notes that have made Heineken a true legend in the beer industry. Elevate your beer-drinking experience with the unmatched taste and international allure of Heineken today!"
   },
   {
@@ -59,7 +59,7 @@
     "abv": 4.00,
     "cost": 2.99,
     "imageName": "haagen",
-    "numImages": 2,
+    "numImages": 3,
     "description": "Experience the epitome of indulgence with Haagen. Crafted with the utmost care and passion, Haagen delivers a symphony of rich flavors and velvety smoothness that delights the senses. From its luxurious texture to its decadent taste, each spoonful of Haagen is a journey into pure bliss. Elevate your dessert experience and treat yourself to the exquisite pleasures of Haagen today."
   },
   {
@@ -68,7 +68,7 @@
     "abv": 0.00,
     "cost": 1.49,
     "imageName": "heineken_zero",
-    "numImages": 2,
+    "numImages": 3,
     "description": "Enjoy the refreshing taste of Heineken 0.0%, a non-alcoholic brew that doesn't compromise on flavor. With its distinctively balanced profile and the same signature crispness as its alcoholic counterpart, Heineken 0.0% offers an invigorating and satisfying experience without the alcohol content. Embrace a mindful choice without sacrificing on taste and enjoy the uncompromising refreshment of Heineken 0.0% today."
   },
   {
@@ -77,7 +77,7 @@
     "abv": 4.20,
     "cost": 2.79,
     "imageName": "speights",
-    "numImages": 2,
+    "numImages": 3,
     "description": "Experience the best of both worlds with Speight's Summit Ultra Low Carb. Savor the crisp and refreshing flavor of this brew while keeping your carb intake in check. With its carefully crafted recipe, Summit Ultra Low Carb delivers a light and satisfying taste without compromising on quality. Indulge in the perfect balance of flavor and health-consciousness with Speight's Summit Ultra Low Carb today."
   },
   {
@@ -86,7 +86,7 @@
     "abv": 5.10,
     "cost": 3.59,
     "imageName": "peroni",
-    "numImages": 2,
+    "numImages": 3,
     "description": "Immerse yourself in the rich heritage of Italian brewing with Peroni. This iconic lager is crafted with meticulous attention to detail, capturing the essence of Italian craftsmanship in every sip. With its elegant flavor profile and refreshing character, Peroni delivers a taste that is both timeless and sophisticated. Elevate your beer-drinking experience with the unmistakable quality and tradition of Peroni."
   },
   {

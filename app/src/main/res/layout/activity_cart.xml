@@ -13,7 +13,8 @@
         android:text="CART"
         android:gravity="center"
         android:textSize="24dp"
-        android:padding="8dp"/>
+        android:padding="8dp"
+        android:layout_marginBottom="8dp"/>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -44,5 +45,6 @@
         android:text="Total: $0.00"
         android:gravity="center"
         android:textSize="24dp"
-        android:padding="8dp"/>
+        android:padding="8dp"
+        android:layout_marginBottom="8dp"/>
 </LinearLayout>

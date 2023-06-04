@@ -27,7 +27,7 @@ public class CartProvider {
         return cartList;
     }
 
-    public static void addToCart(int id, int num)
+    public static int addToCart(int id, int num)
     {
         Integer current = cart.get(id);
         if (current == null)
@@ -35,21 +35,27 @@ public class CartProvider {
             current = 0;
         }
         cart.put(id, current + num);
+        return current + num;
     }
 
-    public static void removeFromCart(Product product, int num)
+    public static int removeFromCart(int id, int num)
     {
-        Integer current = cart.get(product.getIdNumber());
+        Integer current = cart.get(id);
         if (current == null)
         {
             current = 0;
         }
         int newNumber = current - num;
-        if (newNumber < 0)
+        if (newNumber <= 0)
         {
-            newNumber = 0;
+            cart.remove(id);
+            return 0;
+        } else
+        {
+            cart.put(id, newNumber);
+            return newNumber;
         }
-        cart.put(product.getIdNumber(), newNumber);
+
     }
 
     public static void clearCart()

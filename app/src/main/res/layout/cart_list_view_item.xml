@@ -55,8 +55,9 @@
                 android:padding="8dp"/>
             <TextView
                 android:id="@+id/product_quantity"
-                android:layout_width="wrap_content"
+                android:layout_width="25dp"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="3"
                 android:textSize="16sp"/>
             <ImageView

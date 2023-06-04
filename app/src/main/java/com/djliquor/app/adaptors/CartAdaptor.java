@@ -15,6 +15,7 @@ import androidx.annotation.Nullable;
 import com.djliquor.app.R;
 import com.djliquor.app.models.Category;
 import com.djliquor.app.models.Product;
+import com.djliquor.app.providers.CartProvider;
 import com.djliquor.app.providers.ProductProvider;
 
 import java.util.List;
@@ -62,10 +63,35 @@ public class CartAdaptor extends ArrayAdapter {
         TextView countView = currentCartViewItem.findViewById(R.id.product_quantity);
         countView.setText("" + currentCount);
 
+        ImageView minusButton = currentCartViewItem.findViewById(R.id.minus_button);
+        View finalCurrentCartViewItem = currentCartViewItem;
+        minusButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int newCount = CartProvider.removeFromCart(currentProduct.getIdNumber(), 1);
+                countView.setText("" + newCount);
+            }
+        });
+
+        ImageView addButton = currentCartViewItem.findViewById(R.id.add_button);
+
+        addButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int newCount = CartProvider.addToCart(currentProduct.getIdNumber(), 1);
+                countView.setText("" + newCount);
+            }
+        });
+
+
         return currentCartViewItem;
     }
 
     public Pair<Product, Integer> getItem(int position){
         return mProducts.get(position);
+    }
+
+    private void updatePrice(Context context)
+    {
     }
 }

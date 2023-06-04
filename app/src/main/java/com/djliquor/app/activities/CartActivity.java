@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
@@ -42,9 +43,19 @@ public class CartActivity extends AppCompatActivity {
         cartButton.setVisibility(View.INVISIBLE);
 
         ListView cartView = (ListView) this.findViewById(R.id.cart_list);
+        TextView cartEmpty = (TextView) this.findViewById(R.id.cart_empty);
+
+        List<Pair<Product,Integer>> cart = CartProvider.getCart(this);
+        int length = cart.size();
+        if (length > 0) {
+            cartEmpty.setVisibility(View.INVISIBLE);
+        } else
+        {
+            cartView.setVisibility(View.INVISIBLE);
+        }
 
         CartAdaptor cartAdapter = new CartAdaptor(this, R.layout.cart_list_view_item,
-                CartProvider.getCart(this));
+                cart);
         cartView.setAdapter(cartAdapter);
 
         backButton.setOnClickListener(new View.OnClickListener() {

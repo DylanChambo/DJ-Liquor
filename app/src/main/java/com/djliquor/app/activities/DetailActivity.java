@@ -1,7 +1,9 @@
 package com.djliquor.app.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -13,6 +15,8 @@ import com.djliquor.app.R;
 import com.djliquor.app.adaptors.ImagePagerAdaptor;
 import com.djliquor.app.databinding.ActivityDetailBinding;
 import com.djliquor.app.models.Product;
+
+import java.util.Map;
 
 public class DetailActivity extends AppCompatActivity {
 
@@ -32,6 +36,8 @@ public class DetailActivity extends AppCompatActivity {
         TextView priceTextView = (TextView) this.findViewById(R.id.price_text_view);
         TextView abvTextView = (TextView) this.findViewById(R.id.abv_text_view);
         TextView descTextView = (TextView) this.findViewById(R.id.desc_text_view);
+        Button addToCart = (Button) this.findViewById(R.id.add_to_cart);
+        ImageView cartButton = (ImageView) this.findViewById(R.id.cart);
 
         searchView.setVisibility(View.INVISIBLE);
 
@@ -59,10 +65,25 @@ public class DetailActivity extends AppCompatActivity {
         abvTextView.setText(product.getAbv() + "% ABV");
         descTextView.setText(product.getDescription());
 
+        addToCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CartActivity.addToCart(product, 1);
+            }
+        });
+
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
+            }
+        });
+
+        cartButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DetailActivity.this, CartActivity.class);
+                startActivity(intent);
             }
         });
     }

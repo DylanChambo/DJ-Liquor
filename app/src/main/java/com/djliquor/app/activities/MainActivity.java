@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity implements IProductView {
         SearchView searchView = (SearchView) this.findViewById(R.id.search_view);
         ImageView backButton = (ImageView) this.findViewById(R.id.back_button);
         GridView categoryView = (GridView) this.findViewById(R.id.categoryView);
+        ImageView cartButton = (ImageView) this.findViewById(R.id.cart);
 
         resetPopular();
 
@@ -110,6 +111,14 @@ public class MainActivity extends AppCompatActivity implements IProductView {
 
                 Intent intent = new Intent(MainActivity.this, ListActivity.class);
                 intent.putExtra("category", category.getType());
+                startActivity(intent);
+            }
+        });
+
+        cartButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CartActivity.class);
                 startActivity(intent);
             }
         });

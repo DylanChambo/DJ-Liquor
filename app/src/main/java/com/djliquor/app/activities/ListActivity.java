@@ -38,6 +38,7 @@ public class ListActivity extends AppCompatActivity implements IProductView {
         SearchView searchView = (SearchView) this.findViewById(R.id.search_view);
         TextView tv = this.findViewById(R.id.search_text);
         ImageView backButton = (ImageView) this.findViewById(R.id.back_button);
+        ImageView cartButton = (ImageView) this.findViewById(R.id.cart);
 
         String search = getIntent().getExtras().getString("search");
         if (search == null) {
@@ -90,6 +91,14 @@ public class ListActivity extends AppCompatActivity implements IProductView {
             @Override
             public boolean onQueryTextChange(String newText) {
                 return false;
+            }
+        });
+
+        cartButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ListActivity.this, CartActivity.class);
+                startActivity(intent);
             }
         });
 

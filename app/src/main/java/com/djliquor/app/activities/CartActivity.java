@@ -3,6 +3,7 @@ package com.djliquor.app.activities;
 import android.os.Bundle;
 import android.util.Pair;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -19,6 +20,7 @@ import com.djliquor.app.models.Category;
 import com.djliquor.app.models.Product;
 import com.djliquor.app.providers.CartProvider;
 import com.djliquor.app.providers.CategoryProvider;
+import com.djliquor.app.providers.ProductProvider;
 
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -38,6 +40,7 @@ public class CartActivity extends AppCompatActivity {
         SearchView searchView = (SearchView) this.findViewById(R.id.search_view);
         ImageView backButton = (ImageView) this.findViewById(R.id.back_button);
         ImageView cartButton = (ImageView) this.findViewById(R.id.cart);
+        TextView cartTotal = (TextView) this.findViewById(R.id.cart_total);
 
         searchView.setVisibility(View.INVISIBLE);
         cartButton.setVisibility(View.INVISIBLE);
@@ -58,6 +61,8 @@ public class CartActivity extends AppCompatActivity {
                 cart);
         cartView.setAdapter(cartAdapter);
 
+        cartTotal.setText(String.format("TOTAL: $%.2f", CartProvider.getTotal(this)));
+
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -65,6 +70,4 @@ public class CartActivity extends AppCompatActivity {
             }
         });
     }
-
-
 }

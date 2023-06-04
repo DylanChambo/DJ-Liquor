@@ -58,8 +58,13 @@ public class CartProvider {
 
     }
 
-    public static void clearCart()
+    public static float getTotal(Context context)
     {
-        cart.clear();
+        float total = 0f;
+        List<Pair<Product, Integer>> cartList = getCart(context);
+        for (Pair<Product, Integer> cartItem : cartList) {
+            total += cartItem.first.getCost() * cartItem.second;
+        }
+        return total;
     }
 }

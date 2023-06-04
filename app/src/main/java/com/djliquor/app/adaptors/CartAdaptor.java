@@ -5,14 +5,17 @@ import android.util.Pair;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Adapter;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.djliquor.app.R;
+import com.djliquor.app.activities.CartActivity;
 import com.djliquor.app.models.Category;
 import com.djliquor.app.models.Product;
 import com.djliquor.app.providers.CartProvider;
@@ -25,12 +28,18 @@ public class CartAdaptor extends ArrayAdapter {
     int mLayoutID;
     List<Pair<Product, Integer>> mProducts;
     Context mContext;
-    public CartAdaptor(@NonNull Context context, int resource, @NonNull List<Pair<Product, Integer>> objects)
+    TextView mTotal;
+    ListView mListView;
+    TextView mEmpty;
+    public CartAdaptor(@NonNull CartActivity context, int resource, @NonNull List<Pair<Product, Integer>> objects)
     {
         super(context, resource, objects);
         mLayoutID = resource;
         mContext = context;
         mProducts = objects;
+        mTotal = context.findViewById(R.id.cart_total);
+        mListView = context.findViewById(R.id.cart_list);
+        mEmpty = context.findViewById(R.id.cart_empty);
     }
 
     @NonNull
@@ -69,7 +78,19 @@ public class CartAdaptor extends ArrayAdapter {
             @Override
             public void onClick(View v) {
                 int newCount = CartProvider.removeFromCart(currentProduct.getIdNumber(), 1);
-                countView.setText("" + newCount);
+                if (newCount <= 0)
+                {
+                    remove(currentCartItem);
+                    notifyDataSetChanged();
+                    if (CartProvider.getCart(mContext).size() == 0)
+                    {
+                        mEmpty.setVisibility(View.VISIBLE);
+                        mListView.setVisibility(View.INVISIBLE);
+                    }
+                } else{
+                    countView.setText("" + newCount);
+                }
+                updateTotal();
             }
         });
 
@@ -80,6 +101,7 @@ public class CartAdaptor extends ArrayAdapter {
             public void onClick(View v) {
                 int newCount = CartProvider.addToCart(currentProduct.getIdNumber(), 1);
                 countView.setText("" + newCount);
+                updateTotal();
             }
         });
 
@@ -91,7 +113,8 @@ public class CartAdaptor extends ArrayAdapter {
         return mProducts.get(position);
     }
 
-    private void updatePrice(Context context)
+    public void updateTotal()
     {
+        mTotal.setText(String.format("TOTAL: $%.2f", CartProvider.getTotal(mContext)));
     }
 }

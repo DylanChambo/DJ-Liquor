@@ -4,11 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activities.MainActivity"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/toolbar" />
 
     <TextView
-        android:text="DJ LIQUOR"
-        style="@style/TopBar"
-        />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="POPULAR"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:padding="8dp"/>
 
-  </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/popular_view"
+        tools:listitem="@layout/product_recycler_view_item"
+        android:layout_marginHorizontal="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CATEGORIES"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:padding="8dp"/>
+
+
+    <GridView
+        android:id="@+id/categoryView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:horizontalSpacing="16dp"
+        android:numColumns="2"
+        android:verticalSpacing="16dp"
+        android:layout_gravity="bottom"
+        tools:listitem="@layout/category_grid_view_item">
+
+    </GridView>
+</LinearLayout>

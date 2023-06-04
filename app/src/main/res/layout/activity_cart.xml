@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.CartActivity">
+    <include layout="@layout/toolbar"/>
+    <TextView
+        android:id="@+id/search_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CART"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:padding="8dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <ListView
+            android:id="@+id/cart_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="16dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="16dp"
+            tools:listitem="@layout/cart_list_view_item"/>
+
+        <TextView
+            android:id="@+id/cart_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/cart_empty"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:padding="8dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/cart_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total: $0.00"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:padding="8dp"/>
+</LinearLayout>

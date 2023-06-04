@@ -15,6 +15,7 @@ import com.djliquor.app.R;
 import com.djliquor.app.adaptors.ImagePagerAdaptor;
 import com.djliquor.app.databinding.ActivityDetailBinding;
 import com.djliquor.app.models.Product;
+import com.djliquor.app.providers.CartProvider;
 
 import java.util.Map;
 
@@ -68,7 +69,7 @@ public class DetailActivity extends AppCompatActivity {
         addToCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                CartActivity.addToCart(product, 1);
+                CartProvider.addToCart(product.getIdNumber(), 1);
             }
         });
 

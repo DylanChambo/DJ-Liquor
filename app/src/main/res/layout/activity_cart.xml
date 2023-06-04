@@ -8,8 +8,11 @@
     <include layout="@layout/toolbar"/>
 
     <ListView
+        android:id="@+id/cart_list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:listitem="@layout/cart_list_view_item"
+        android:padding="16dp">
 
     </ListView>
 

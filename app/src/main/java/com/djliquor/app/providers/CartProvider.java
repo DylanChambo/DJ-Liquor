@@ -34,8 +34,12 @@ public class CartProvider {
         {
             current = 0;
         }
-        cart.put(id, current + num);
-        return current + num;
+        int total = current + num;
+        if (total >= 99) {
+            total = 99;
+        }
+        cart.put(id, total);
+        return total;
     }
 
     public static int removeFromCart(int id, int num)
